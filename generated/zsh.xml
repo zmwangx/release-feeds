@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/zsh.xml</id>
+  <title>zsh releases</title>
+  <author>
+    <name>release-feeds</name>
+  </author>
+  <updated>2020-07-20T12:19:35Z</updated>
+  <link rel="self" href="https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/zsh.xml"/>
+  <entry>
+    <id>urn:uuid:4646548a-ca83-11ea-86f8-958da9b1b30d</id>
+    <title>zsh 5.8</title>
+    <author>
+      <name>zsh authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://www.zsh.org/pub/zsh-5.8.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.zsh.org/pub/zsh-5.8.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2020-07-20T12:19:35Z</updated>
+  </entry>
+</feed>

@@ -1,0 +1,9 @@
+# AUTO-GENERATED -- DO NOT MODIFY
+!Config
+feed: !FeedConfig
+  base_url: https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/
+packages:
+- ffmpeg
+- python3-defaults
+- rustc
+- zsh

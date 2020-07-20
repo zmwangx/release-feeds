@@ -1,0 +1,29 @@
+# AUTO-GENERATED -- DO NOT MODIFY
+ffmpeg: !FeedEntry
+  id: urn:uuid:4678283e-ca83-11ea-86f8-958da9b1b30d
+  package_name: ffmpeg
+  package_version: !PackageVersion
+    archive_url: https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz
+    version: 4.3.1
+  updated: 2020-07-20 12:19:36.002838+00:00
+python3-defaults: !FeedEntry
+  id: urn:uuid:46003b80-ca83-11ea-86f8-958da9b1b30d
+  package_name: python3-defaults
+  package_version: !PackageVersion
+    archive_url: https://www.python.org/ftp/python/3.8.4/Python-3.8.4.tar.xz
+    version: 3.8.4
+  updated: 2020-07-20 12:19:35.217199+00:00
+rustc: !FeedEntry
+  id: urn:uuid:46006628-ca83-11ea-86f8-958da9b1b30d
+  package_name: rustc
+  package_version: !PackageVersion
+    archive_url: https://static.rust-lang.org/dist/rustc-1.45.0-src.tar.xz
+    version: 1.45.0
+  updated: 2020-07-20 12:19:35.217971+00:00
+zsh: !FeedEntry
+  id: urn:uuid:4646548a-ca83-11ea-86f8-958da9b1b30d
+  package_name: zsh
+  package_version: !PackageVersion
+    archive_url: https://www.zsh.org/pub/zsh-5.8.tar.xz
+    version: '5.8'
+  updated: 2020-07-20 12:19:35.676311+00:00
