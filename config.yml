@@ -1,0 +1,40 @@
+# DO NOT REMOVE THE TAGS (!Config, !FeedConfig, etc.)
+#
+# The following setting should silence unknown tag errors in VS Code:
+#
+#    "yaml.customTags": [
+#         "!Config mapping",
+#         "!FeedConfig mapping"
+#    ]
+!Config
+feed: !FeedConfig
+  # Base part of the feeds' canonical URLs, i.e., the feeds are to be served as
+  # <base_url>/aggregate.xml, <base_url>/<package>.xml, etc. Trailing slash is
+  # optional.
+  #
+  # This parameter is REQUIRED.
+  base_url: https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/
+
+  # Author of the feeds. Defaults to "release-feeds".
+  #author: release-feeds
+
+  # Title of the aggregate feed. Defaults to "Aggregate software releases". Note
+  # that the title of the release feed for each individual package is always
+  # "<package> releases" and not affected by this setting.
+  #aggregate_title: Aggregate software releases
+
+# A list of packages to monitor. Each entry should be the name of a Debian
+# source package available at https://sources.debian.org/ for the sid (unstable)
+# distribution.
+#
+# You can find the source package corresponding to a binary package next to
+# "Download Source Package" on the binary package page
+# https://packages.debian.org/sid/<package>.
+#
+# Note that not every Debian source package has a debian/watch file. Only ones
+# that do can be monitored.
+packages:
+  - ffmpeg
+  - python3-defaults
+  - rustc
+  - zsh
