@@ -5,7 +5,7 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2020-07-20T12:19:36Z</updated>
+  <updated>2020-07-20T15:16:31Z</updated>
   <link rel="self" href="https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/aggregate.xml"/>
   <entry>
     <id>urn:uuid:4678283e-ca83-11ea-86f8-958da9b1b30d</id>
@@ -14,7 +14,7 @@
       <name>ffmpeg authors</name>
     </author>
     <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2020-07-20T12:19:36Z</updated>
   </entry>
   <entry>
@@ -24,7 +24,7 @@
       <name>zsh authors</name>
     </author>
     <link rel="enclosure" type="application/octet-stream" href="https://www.zsh.org/pub/zsh-5.8.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.zsh.org/pub/zsh-5.8.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.zsh.org/pub/zsh-5.8.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.zsh.org/pub/zsh-5.8.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2020-07-20T12:19:35Z</updated>
   </entry>
   <entry>
@@ -34,7 +34,7 @@
       <name>rustc authors</name>
     </author>
     <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.45.0-src.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.45.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.45.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.45.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2020-07-20T12:19:35Z</updated>
   </entry>
   <entry>
@@ -44,7 +44,7 @@
       <name>python3-defaults authors</name>
     </author>
     <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.8.4/Python-3.8.4.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.8.4/Python-3.8.4.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;&lt;/a&gt;&lt;/p&gt;</content>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.8.4/Python-3.8.4.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.8.4/Python-3.8.4.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2020-07-20T12:19:35Z</updated>
   </entry>
 </feed>
