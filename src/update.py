@@ -372,6 +372,7 @@ def github_actions_set_env(key: str, value: Any) -> None:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-j", "--jobs", type=int, default=1)
+    parser.add_argument("--regenerate", action="store_true")
     args = parser.parse_args()
 
     config, prior_config = load_config()
@@ -382,7 +383,9 @@ def main():
         )
 
         # Regenerate all feeds if feed config changes.
-        regenerate_all = prior_config is None or prior_config.feed != config.feed
+        regenerate_all = (
+            args.regenerate or prior_config is None or prior_config.feed != config.feed
+        )
 
         if updated_packages:
             logger.info(f"updated: {', '.join(updated_packages)}")
