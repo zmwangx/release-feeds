@@ -1,6 +1,6 @@
 # AUTO-GENERATED -- DO NOT MODIFY
-https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/aggregate.xml
-https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/ffmpeg.xml
-https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/python3-defaults.xml
-https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/rustc.xml
-https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/zsh.xml
+https://release-feeds.zhimingwang.org/aggregate.xml
+https://release-feeds.zhimingwang.org/ffmpeg.xml
+https://release-feeds.zhimingwang.org/python3-defaults.xml
+https://release-feeds.zhimingwang.org/rustc.xml
+https://release-feeds.zhimingwang.org/zsh.xml

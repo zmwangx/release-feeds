@@ -1,7 +1,7 @@
 # AUTO-GENERATED -- DO NOT MODIFY
 !Config
 feed: !FeedConfig
-  base_url: https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/
+  base_url: https://release-feeds.zhimingwang.org/
 packages:
 - ffmpeg
 - python3-defaults
