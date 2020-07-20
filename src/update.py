@@ -21,7 +21,9 @@ import yaml
 
 root = pathlib.Path(__file__).parent.parent
 config_yml = root / "config.yml"
-generated_dir = root / "generated"
+# Using docs/ for generated dir -- awkward, but that's the only
+# directory supported by GitHub Pages.
+generated_dir = root / "docs"
 generated_dir.mkdir(exist_ok=True)
 used_config_yml = generated_dir / "used_config.yml"
 registry_yml = generated_dir / "registry.yml"

@@ -13,7 +13,7 @@ feed: !FeedConfig
   # optional.
   #
   # This parameter is REQUIRED.
-  base_url: https://cdn.jsdelivr.net/gh/zmwangx/release-feeds@master/generated/
+  base_url: https://release-feeds.zhimingwang.org/
 
   # Author of the feeds. Defaults to "release-feeds".
   #author: release-feeds
