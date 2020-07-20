@@ -119,7 +119,7 @@ jinja_env.filters.update(
 feed_template = jinja_env.from_string(
     """\
 {%- macro content(url) -%}
-<p><a href="{{ url }}" target="_blank" rel="noopener noreferrer"></a></p>
+<p><a href="{{ url }}" target="_blank" rel="noopener noreferrer">{{ url }}</a></p>
 {%- endmacro -%}
 
 <?xml version="1.0" encoding="utf-8"?>
