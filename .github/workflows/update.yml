@@ -17,8 +17,11 @@ jobs:
           python3 -m pip install -r src/requirements.txt
       - name: Check for new versions and update feeds
         run: |
+          set -x
+          addtional_options=()
+          git log --format=%B -n1 | grep -q '\[regenerate\]' && additional_options+=(--regenerate)
           # Sets FAILED to true if failed to get latest version of at least one package.
-          python3 src/update.py -j8
+          python3 src/update.py -j8 "${additional_options[@]}"
       - name: Commit and push changes
         run: |
           git config user.name 'github-actions'
