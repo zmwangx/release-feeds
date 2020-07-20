@@ -7,12 +7,12 @@ ffmpeg: !FeedEntry
     version: 4.3.1
   updated: 2020-07-20 12:19:36.002838+00:00
 python3-defaults: !FeedEntry
-  id: urn:uuid:46003b80-ca83-11ea-86f8-958da9b1b30d
+  id: urn:uuid:50138d78-cabc-11ea-a327-656d0037be5e
   package_name: python3-defaults
   package_version: !PackageVersion
-    archive_url: https://www.python.org/ftp/python/3.8.4/Python-3.8.4.tar.xz
-    version: 3.8.4
-  updated: 2020-07-20 12:19:35.217199+00:00
+    archive_url: https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tar.xz
+    version: 3.8.5
+  updated: 2020-07-20 19:07:53.434554+00:00
 rustc: !FeedEntry
   id: urn:uuid:46006628-ca83-11ea-86f8-958da9b1b30d
   package_name: rustc
