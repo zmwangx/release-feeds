@@ -4,6 +4,7 @@ feed: !FeedConfig
   base_url: https://release-feeds.zhimingwang.org/
 packages:
 - ffmpeg
+- golang-defaults
 - python3-defaults
 - rustc
 - zsh

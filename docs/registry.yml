@@ -6,6 +6,13 @@ ffmpeg: !FeedEntry
     archive_url: https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz
     version: 4.3.1
   updated: 2020-07-20 12:19:36.002838+00:00
+golang-defaults: !FeedEntry
+  id: urn:uuid:b9ea7406-cb0b-11ea-a7e3-9f34c280da41
+  package_name: golang-defaults
+  package_version: !PackageVersion
+    archive_url: https://golang.org/dl/go1.14.6.src.tar.gz
+    version: 1.14.6
+  updated: 2020-07-21 04:36:21.245354+00:00
 python3-defaults: !FeedEntry
   id: urn:uuid:50138d78-cabc-11ea-a327-656d0037be5e
   package_name: python3-defaults

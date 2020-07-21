@@ -4,3 +4,4 @@ https://release-feeds.zhimingwang.org/ffmpeg.xml
 https://release-feeds.zhimingwang.org/python3-defaults.xml
 https://release-feeds.zhimingwang.org/rustc.xml
 https://release-feeds.zhimingwang.org/zsh.xml
+https://release-feeds.zhimingwang.org/golang-defaults.xml
