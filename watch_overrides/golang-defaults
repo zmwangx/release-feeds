@@ -1,0 +1,3 @@
+version=4
+https://golang.org/dl/go(\d+(?:\.\d+)+).src.tar.gz \
+debian uupdate

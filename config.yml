@@ -38,6 +38,7 @@ feed: !FeedConfig
 # debian/watch, you can add your own watch file to watch_overrides/<package>.
 packages:
   - ffmpeg
+  - golang-defaults
   - python3-defaults
   - rustc
   - zsh
