@@ -23,16 +23,19 @@ feed: !FeedConfig
   # "<package> releases" and not affected by this setting.
   #aggregate_title: Aggregate software releases
 
-# A list of packages to monitor. Each entry should be the name of a Debian
-# source package available at https://sources.debian.org/ for the sid (unstable)
-# distribution.
+# A list of packages to monitor.
+#
+# Each entry bootstrapped from Debian should be the name of a Debian source
+# package available at https://sources.debian.org/ for the sid (unstable)
+# distribution. Note that not every Debian source package has a debian/watch
+# file.
 #
 # You can find the source package corresponding to a binary package next to
 # "Download Source Package" on the binary package page
 # https://packages.debian.org/sid/<package>.
 #
-# Note that not every Debian source package has a debian/watch file. Only ones
-# that do can be monitored.
+# Alternatively, to monitor packages not in Debian, or packages without existing
+# debian/watch, you can add your own watch file to watch_overrides/<package>.
 packages:
   - ffmpeg
   - python3-defaults

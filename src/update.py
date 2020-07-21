@@ -4,6 +4,7 @@ import datetime
 import functools
 import logging
 import pathlib
+import shutil
 import subprocess
 import tempfile
 import threading
@@ -21,6 +22,7 @@ import yaml
 
 root = pathlib.Path(__file__).parent.parent
 config_yml = root / "config.yml"
+watch_overrides_dir = root / "watch_overrides"
 # Using docs/ for generated dir -- awkward, but that's the only
 # directory supported by GitHub Pages.
 generated_dir = root / "docs"
@@ -197,6 +199,14 @@ def download_watch_file(package: str, destdir: pathlib.Path) -> None:
         fp.write(r.text)
 
 
+def acquire_watch_file(package: str, destdir: pathlib.Path) -> None:
+    override_path = watch_overrides_dir / package
+    if override_path.exists():
+        shutil.copyfile(override_path, destdir / "watch")
+    else:
+        download_watch_file(package, destdir)
+
+
 def uscan(package: str, source_dir: pathlib.Path) -> PackageVersion:
     try:
         report = subprocess.check_output(
@@ -219,7 +229,7 @@ def get_package_version(package: str) -> PackageVersion:
         debian_dir = source_dir / "debian"
         debian_dir.mkdir()
         write_changelog(package, debian_dir)
-        download_watch_file(package, debian_dir)
+        acquire_watch_file(package, debian_dir)
         version = uscan(package, source_dir)
         logger.info(f"{package} {version.version}: {version.archive_url}")
         return version
