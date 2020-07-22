@@ -12,7 +12,7 @@ import urllib.parse
 import uuid
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
-from typing import Any, AnyStr, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import jinja2
 import requests
@@ -179,7 +179,7 @@ def download_watch_file(package: str, destdir: pathlib.Path) -> None:
             version: str = version_info["version"]
             break
     else:
-        raise RuntimeError(f"no sid version found for {package}")
+        raise RuntimeError(f"no sid version found for {package}: {r.text}")
 
     # Get URL of debian/watch in the latest version.
     url = f"https://sources.debian.org/api/src/{package}/{version}/debian/watch"
@@ -189,7 +189,10 @@ def download_watch_file(package: str, destdir: pathlib.Path) -> None:
     payload = r.json()
     if "error" in payload:
         raise RuntimeError(f"GET {url}: {r.text}")
-    raw_url = urllib.parse.urljoin(url, payload["raw_url"])
+    try:
+        raw_url = urllib.parse.urljoin(url, payload["raw_url"])
+    except KeyError:
+        raise RuntimeError(f"no raw_url for {package}/{version}/debian/watch: {r.text}")
 
     # Download debian/watch.
     logger.info(f"GET {raw_url}")
