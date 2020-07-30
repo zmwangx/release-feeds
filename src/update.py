@@ -391,7 +391,7 @@ def github_actions_set_env(key: str, value: Any) -> None:
     print(f"::set-env name={key}::{value}")
 
 
-def main():
+def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("-j", "--jobs", type=int, default=1)
     parser.add_argument("--regenerate", action="store_true")
@@ -422,7 +422,7 @@ def main():
             remove_outdated_feeds(removed_packages)
 
         if not (updated_packages or removed_packages or regenerate_all):
-            return
+            return retcode
 
         if regenerate_all:
             logger.info("change(s) in feed config detected, regenerating all feeds")
@@ -440,8 +440,8 @@ def main():
     else:
         # On normal exit, write config to used_config.yml.
         dump_config(config)
-    sys.exit(retcode)
+    return retcode
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
