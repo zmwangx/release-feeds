@@ -20,6 +20,8 @@ import requests
 import stackprinter
 import yaml
 
+import logfiles
+
 
 root = pathlib.Path(__file__).parent.parent
 config_yml = root / "config.yml"
@@ -31,6 +33,7 @@ generated_dir.mkdir(exist_ok=True)
 used_config_yml = generated_dir / "used_config.yml"
 registry_yml = generated_dir / "registry.yml"
 feeds_txt = generated_dir / "feeds.txt"
+logfile = logfiles.generate_logfile_path()
 
 session = requests.Session()
 session.request = functools.partial(session.request, timeout=5)
@@ -38,14 +41,17 @@ session.request = functools.partial(session.request, timeout=5)
 
 def init_logger() -> logging.Logger:
     logger = logging.getLogger(__file__)
-    sh = logging.StreamHandler()
-    sh.setFormatter(
-        logging.Formatter(
-            fmt="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
-        )
+    formatter = logging.Formatter(
+        fmt="%(asctime)s [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
     )
+    sh = logging.StreamHandler()
+    sh.setFormatter(formatter)
     sh.setLevel(logging.INFO)
+    fh = logging.FileHandler(logfile)
+    fh.setFormatter(formatter)
+    fh.setLevel(logging.INFO)
     logger.addHandler(sh)
+    logger.addHandler(fh)
     logger.setLevel(logging.INFO)
     return logger
 
@@ -393,8 +399,9 @@ def main():
 
     config, prior_config = load_config()
 
+    github_actions_set_env("LOGFILE", logfile)
+    retcode = 0
     try:
-        retcode = 0
         registry, updated_packages, failed_packages, removed_packages = update_registry(
             config.packages, jobs=args.jobs
         )
@@ -428,11 +435,12 @@ def main():
         # On uncaught exception, remove used_config.yml so that all
         # feeds will be regenerated next time.
         used_config_yml.unlink(missing_ok=True)
-        raise
+        logger.critical("unexpected exception", exc_info=True)
+        retcode = 1
     else:
         # On normal exit, write config to used_config.yml.
         dump_config(config)
-        sys.exit(retcode)
+    sys.exit(retcode)
 
 
 if __name__ == "__main__":
