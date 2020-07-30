@@ -20,6 +20,7 @@ jobs:
           set -x
           addtional_options=()
           git log --format=%B -n1 | grep -q '\[regenerate\]' && additional_options+=(--regenerate)
+          # The following command sets the LOGFILE env var.
           python3 src/update.py -j8 "${additional_options[@]}"
       - name: Commit and push changes
         if: ${{ always() }}
@@ -31,3 +32,24 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Remove log file on success
+        if: ${{ success() }}
+        run: |
+          [[ -n $LOGFILE ]] && rm -f $LOGFILE
+      - name: Checkout logs branch
+        if: ${{ always() }}
+        uses: actions/checkout@v2
+        with:
+          ref: logs
+          clean: false
+      - name: Trim log files
+        if: ${{ always() }}
+        run: |
+          git checkout $GITHUB_SHA -- src/logfiles.py && git reset src/logfiles.py
+          python3 src/logfiles.py
+      - name: Commit and push log files
+        if: ${{ always() }}
+        run: |
+          git add '*.log' || true
+          git diff --cached --quiet || git commit -m 'Update logs (from GitHub Actions)'
+          git push
