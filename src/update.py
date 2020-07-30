@@ -6,6 +6,7 @@ import logging
 import pathlib
 import shutil
 import subprocess
+import sys
 import tempfile
 import threading
 import urllib.parse
@@ -393,6 +394,7 @@ def main():
     config, prior_config = load_config()
 
     try:
+        retcode = 0
         registry, updated_packages, failed_packages, removed_packages = update_registry(
             config.packages, jobs=args.jobs
         )
@@ -408,7 +410,7 @@ def main():
             logger.info(f"no updates found")
         if failed_packages:
             logger.error(f"failed: {', '.join(failed_packages)}")
-            github_actions_set_env("FAILED", "true")
+            retcode = 1
         if removed_packages:
             remove_outdated_feeds(removed_packages)
 
@@ -430,6 +432,7 @@ def main():
     else:
         # On normal exit, write config to used_config.yml.
         dump_config(config)
+        sys.exit(retcode)
 
 
 if __name__ == "__main__":

@@ -20,9 +20,9 @@ jobs:
           set -x
           addtional_options=()
           git log --format=%B -n1 | grep -q '\[regenerate\]' && additional_options+=(--regenerate)
-          # Sets FAILED to true if failed to get latest version of at least one package.
           python3 src/update.py -j8 "${additional_options[@]}"
       - name: Commit and push changes
+        if: ${{ always() }}
         run: |
           git config user.name 'github-actions'
           git config user.email 'actions@github.com'
@@ -31,8 +31,3 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Fail
-        run: |
-          echo "Version check for one or more packages failed."
-          false
-        if: env.FAILED == 'true'
