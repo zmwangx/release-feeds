@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2020-08-03T22:16:42Z</updated>
+  <updated>2020-08-06T16:53:27Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:5917d054-d805-11ea-8355-a1bd7c07fbcb</id>
+    <title>golang-defaults 1.14.7</title>
+    <author>
+      <name>golang-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.14.7.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.14.7.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.14.7.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2020-08-06T16:53:26Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:02228c4c-d5d7-11ea-8de1-b15f97d16bbe</id>
     <title>rustc 1.45.2</title>
@@ -26,16 +36,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://hackage.haskell.org/package/pandoc-2.10.1/pandoc-2.10.1.tar.gz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://hackage.haskell.org/package/pandoc-2.10.1/pandoc-2.10.1.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://hackage.haskell.org/package/pandoc-2.10.1/pandoc-2.10.1.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2020-07-30T14:02:38Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:b9ea7406-cb0b-11ea-a7e3-9f34c280da41</id>
-    <title>golang-defaults 1.14.6</title>
-    <author>
-      <name>golang-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.14.6.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.14.6.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.14.6.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2020-07-21T04:36:21Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:50138d78-cabc-11ea-a327-656d0037be5e</id>
