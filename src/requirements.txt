@@ -2,3 +2,4 @@ Jinja2
 PyYAML
 requests
 stackprinter
+tenacity

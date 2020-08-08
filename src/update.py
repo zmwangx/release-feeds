@@ -18,6 +18,7 @@ from typing import Any, Dict, List, Optional, Tuple
 import jinja2
 import requests
 import stackprinter
+import tenacity
 import yaml
 
 import logfiles
@@ -109,6 +110,10 @@ class Feed(SafeLoadableYAMLObject):
 Registry = Dict[str, FeedEntry]
 
 
+class RetriableException(Exception):
+    pass
+
+
 def iso8601_format(dt: datetime.datetime) -> str:
     return dt.astimezone(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -172,6 +177,15 @@ def write_changelog(package: str, destdir: pathlib.Path) -> None:
         )
 
 
+@tenacity.retry(
+    retry=tenacity.retry_if_exception_type(RetriableException),
+    wait=tenacity.wait_exponential(multiplier=2, max=15),
+    stop=tenacity.stop_after_attempt(3),
+    after=lambda retry_state: logger.warning(
+        f"retrying download_watch_file for {retry_state.args[0]} "
+        f"(attempt #{retry_state.attempt_number})"
+    ),
+)
 def download_watch_file(package: str, destdir: pathlib.Path) -> None:
     # Get latest version of package in debian sid.
     url = f"https://sources.debian.org/api/src/{package}/"
@@ -186,7 +200,7 @@ def download_watch_file(package: str, destdir: pathlib.Path) -> None:
             version: str = version_info["version"]
             break
     else:
-        raise RuntimeError(f"no sid version found for {package}: {r.text}")
+        raise RetriableException(f"no sid version found for {package}: {r.text}")
 
     # Get URL of debian/watch in the latest version.
     url = f"https://sources.debian.org/api/src/{package}/{version}/debian/watch"
@@ -283,8 +297,18 @@ def update_registry(
             existing_entry = registry.get(package)
         try:
             entry = try_updating_entry(package, existing_entry=existing_entry)
-        except Exception:
-            logger.error(f"failed to update entry for {package}", exc_info=True)
+        except Exception as e:
+            processed = False
+            if isinstance(e, tenacity.RetryError):
+                try:
+                    e.reraise()
+                except RetriableException as wrapped_exc:
+                    logger.error(f"failed to update entry for {package}: {wrapped_exc}")
+                    processed = True
+                except:
+                    pass
+            if not processed:
+                logger.error(f"failed to update entry for {package}", exc_info=True)
             with lock:
                 failed_packages.append(package)
             return
