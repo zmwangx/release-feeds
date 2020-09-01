@@ -1,0 +1,369 @@
+2020-09-01 15:33:34 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'pandoc', 'python3-defaults', 'rustc', 'zsh'])
+2020-09-01 15:33:34 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2020-09-01 15:33:34 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2020-09-01 15:33:34 [INFO] GET https://sources.debian.org/api/src/pandoc/
+2020-09-01 15:33:34 [INFO] GET https://sources.debian.org/api/src/zsh/
+2020-09-01 15:33:34 [INFO] GET https://sources.debian.org/api/src/rustc/
+2020-09-01 15:33:34 [ERROR] failed to update entry for pandoc
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 485, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1639, in _raise_ssl_error
+    raise SysCallError(errno, errorcode.get(errno))
+OpenSSL.SSL.SysCallError: (104, 'ECONNRESET')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 352, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 491, in wrap_socket
+    raise ssl.SSLError("bad handshake: %r" % e)
+ssl.SSLError: ("bad handshake: SysCallError(104, 'ECONNRESET')",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='sources.debian.org', port=443): Max retries exceeded with url: /api/src/pandoc/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/update.py", line 299, in try_updating_registry_entry
+    entry = try_updating_entry(package, existing_entry=existing_entry)
+  File "src/update.py", line 265, in try_updating_entry
+    latest_version = get_package_version(package)
+  File "src/update.py", line 256, in get_package_version
+    acquire_watch_file(package, debian_dir)
+  File "src/update.py", line 231, in acquire_watch_file
+    download_watch_file(package, destdir)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 329, in wrapped_f
+    return self.call(f, *args, **kw)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 409, in call
+    do = self.iter(retry_state=retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 356, in iter
+    return fut.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 412, in call
+    result = fn(*args, **kwargs)
+  File "src/update.py", line 193, in download_watch_file
+    r = session.get(url)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 546, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='sources.debian.org', port=443): Max retries exceeded with url: /api/src/pandoc/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')")))
+2020-09-01 15:33:34 [ERROR] failed to update entry for zsh
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 485, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1639, in _raise_ssl_error
+    raise SysCallError(errno, errorcode.get(errno))
+OpenSSL.SSL.SysCallError: (104, 'ECONNRESET')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 352, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 491, in wrap_socket
+    raise ssl.SSLError("bad handshake: %r" % e)
+ssl.SSLError: ("bad handshake: SysCallError(104, 'ECONNRESET')",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='sources.debian.org', port=443): Max retries exceeded with url: /api/src/zsh/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/update.py", line 299, in try_updating_registry_entry
+    entry = try_updating_entry(package, existing_entry=existing_entry)
+  File "src/update.py", line 265, in try_updating_entry
+    latest_version = get_package_version(package)
+  File "src/update.py", line 256, in get_package_version
+    acquire_watch_file(package, debian_dir)
+  File "src/update.py", line 231, in acquire_watch_file
+    download_watch_file(package, destdir)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 329, in wrapped_f
+    return self.call(f, *args, **kw)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 409, in call
+    do = self.iter(retry_state=retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 356, in iter
+    return fut.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 412, in call
+    result = fn(*args, **kwargs)
+  File "src/update.py", line 193, in download_watch_file
+    r = session.get(url)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 546, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='sources.debian.org', port=443): Max retries exceeded with url: /api/src/zsh/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')")))
+2020-09-01 15:33:34 [ERROR] failed to update entry for ffmpeg
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 485, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1639, in _raise_ssl_error
+    raise SysCallError(errno, errorcode.get(errno))
+OpenSSL.SSL.SysCallError: (104, 'ECONNRESET')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 352, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 491, in wrap_socket
+    raise ssl.SSLError("bad handshake: %r" % e)
+ssl.SSLError: ("bad handshake: SysCallError(104, 'ECONNRESET')",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='sources.debian.org', port=443): Max retries exceeded with url: /api/src/ffmpeg/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/update.py", line 299, in try_updating_registry_entry
+    entry = try_updating_entry(package, existing_entry=existing_entry)
+  File "src/update.py", line 265, in try_updating_entry
+    latest_version = get_package_version(package)
+  File "src/update.py", line 256, in get_package_version
+    acquire_watch_file(package, debian_dir)
+  File "src/update.py", line 231, in acquire_watch_file
+    download_watch_file(package, destdir)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 329, in wrapped_f
+    return self.call(f, *args, **kw)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 409, in call
+    do = self.iter(retry_state=retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 356, in iter
+    return fut.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 412, in call
+    result = fn(*args, **kwargs)
+  File "src/update.py", line 193, in download_watch_file
+    r = session.get(url)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 546, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='sources.debian.org', port=443): Max retries exceeded with url: /api/src/ffmpeg/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')")))
+2020-09-01 15:33:34 [ERROR] failed to update entry for python3-defaults
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 485, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1639, in _raise_ssl_error
+    raise SysCallError(errno, errorcode.get(errno))
+OpenSSL.SSL.SysCallError: (104, 'ECONNRESET')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 352, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 491, in wrap_socket
+    raise ssl.SSLError("bad handshake: %r" % e)
+ssl.SSLError: ("bad handshake: SysCallError(104, 'ECONNRESET')",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='sources.debian.org', port=443): Max retries exceeded with url: /api/src/python3-defaults/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/update.py", line 299, in try_updating_registry_entry
+    entry = try_updating_entry(package, existing_entry=existing_entry)
+  File "src/update.py", line 265, in try_updating_entry
+    latest_version = get_package_version(package)
+  File "src/update.py", line 256, in get_package_version
+    acquire_watch_file(package, debian_dir)
+  File "src/update.py", line 231, in acquire_watch_file
+    download_watch_file(package, destdir)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 329, in wrapped_f
+    return self.call(f, *args, **kw)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 409, in call
+    do = self.iter(retry_state=retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 356, in iter
+    return fut.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 412, in call
+    result = fn(*args, **kwargs)
+  File "src/update.py", line 193, in download_watch_file
+    r = session.get(url)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 546, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='sources.debian.org', port=443): Max retries exceeded with url: /api/src/python3-defaults/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')")))
+2020-09-01 15:33:34 [ERROR] failed to update entry for rustc
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 485, in wrap_socket
+    cnx.do_handshake()
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1915, in do_handshake
+    self._raise_ssl_error(self._ssl, result)
+  File "/usr/lib/python3/dist-packages/OpenSSL/SSL.py", line 1639, in _raise_ssl_error
+    raise SysCallError(errno, errorcode.get(errno))
+OpenSSL.SSL.SysCallError: (104, 'ECONNRESET')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 376, in _make_request
+    self._validate_conn(conn)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 996, in _validate_conn
+    conn.connect()
+  File "/usr/lib/python3/dist-packages/urllib3/connection.py", line 352, in connect
+    self.sock = ssl_wrap_socket(
+  File "/usr/lib/python3/dist-packages/urllib3/util/ssl_.py", line 370, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 491, in wrap_socket
+    raise ssl.SSLError("bad handshake: %r" % e)
+ssl.SSLError: ("bad handshake: SysCallError(104, 'ECONNRESET')",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='sources.debian.org', port=443): Max retries exceeded with url: /api/src/rustc/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/update.py", line 299, in try_updating_registry_entry
+    entry = try_updating_entry(package, existing_entry=existing_entry)
+  File "src/update.py", line 265, in try_updating_entry
+    latest_version = get_package_version(package)
+  File "src/update.py", line 256, in get_package_version
+    acquire_watch_file(package, debian_dir)
+  File "src/update.py", line 231, in acquire_watch_file
+    download_watch_file(package, destdir)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 329, in wrapped_f
+    return self.call(f, *args, **kw)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 409, in call
+    do = self.iter(retry_state=retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 356, in iter
+    return fut.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 412, in call
+    result = fn(*args, **kwargs)
+  File "src/update.py", line 193, in download_watch_file
+    r = session.get(url)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 546, in get
+    return self.request('GET', url, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/usr/lib/python3/dist-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='sources.debian.org', port=443): Max retries exceeded with url: /api/src/rustc/ (Caused by SSLError(SSLError("bad handshake: SysCallError(104, 'ECONNRESET')")))
+2020-09-01 15:33:35 [INFO] golang-defaults 1.15: https://golang.org/dl/go1.15.src.tar.gz
+2020-09-01 15:33:35 [INFO] no updates found
+2020-09-01 15:33:35 [ERROR] failed: pandoc, zsh, ffmpeg, python3-defaults, rustc
