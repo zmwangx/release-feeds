@@ -21,12 +21,12 @@ pandoc: !FeedEntry
     version: 2.10.1
   updated: 2020-07-30 14:02:38.375683+00:00
 python3-defaults: !FeedEntry
-  id: urn:uuid:18d14a56-03c6-11eb-81c2-e3d340c5e4e1
+  id: urn:uuid:5f008170-03c8-11eb-ab52-27db31525020
   package_name: python3-defaults
   package_version: !PackageVersion
-    archive_url: https://www.python.org/ftp/python/3.8.5/Python-3.8.5.tar.xz
-    version: 3.8.5
-  updated: 2020-10-01 09:11:31.971116+00:00
+    archive_url: https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tar.xz
+    version: 3.8.6
+  updated: 2020-10-01 09:27:48.714447+00:00
 rustc: !FeedEntry
   id: urn:uuid:646aef72-e8b3-11ea-ae3e-1f2c76b2c9ee
   package_name: rustc
