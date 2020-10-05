@@ -5,16 +5,16 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2020-10-01T10:52:50Z</updated>
+  <updated>2020-10-05T16:43:09Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/python3-defaults.xml"/>
   <entry>
-    <id>urn:uuid:4001d3d0-03d4-11eb-a3df-3977b9e3d73d</id>
-    <title>python3-defaults 3.8.6</title>
+    <id>urn:uuid:d9c02a6e-0729-11eb-892b-3d0aaa6ff633</id>
+    <title>python3-defaults 3.9.0</title>
     <author>
       <name>python3-defaults authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2020-10-01T10:52:50Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2020-10-05T16:43:09Z</updated>
   </entry>
 </feed>
