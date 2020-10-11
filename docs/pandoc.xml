@@ -5,16 +5,16 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2020-07-30T14:02:38Z</updated>
+  <updated>2020-10-11T16:43:04Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/pandoc.xml"/>
   <entry>
-    <id>urn:uuid:5394e060-d26d-11ea-9d1c-fb264029a2fe</id>
-    <title>pandoc 2.10.1</title>
+    <id>urn:uuid:d51d1998-0be0-11eb-86e9-7345836106ea</id>
+    <title>pandoc 2.11</title>
     <author>
       <name>pandoc authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://hackage.haskell.org/package/pandoc-2.10.1/pandoc-2.10.1.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://hackage.haskell.org/package/pandoc-2.10.1/pandoc-2.10.1.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://hackage.haskell.org/package/pandoc-2.10.1/pandoc-2.10.1.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2020-07-30T14:02:38Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://hackage.haskell.org/package/pandoc-2.11/pandoc-2.11.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://hackage.haskell.org/package/pandoc-2.11/pandoc-2.11.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://hackage.haskell.org/package/pandoc-2.11/pandoc-2.11.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2020-10-11T16:43:04Z</updated>
   </entry>
 </feed>
