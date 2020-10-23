@@ -14,12 +14,12 @@ golang-defaults: !FeedEntry
     version: 1.15.3
   updated: 2020-10-14 20:30:40.316713+00:00
 pandoc: !FeedEntry
-  id: urn:uuid:e16d3232-0f73-11eb-969e-b17e48e27e46
+  id: urn:uuid:e8d88928-14ea-11eb-90bd-f56689a06d22
   package_name: pandoc
   package_version: !PackageVersion
-    archive_url: https://hackage.haskell.org/package/pandoc-2.11.0.2/pandoc-2.11.0.2.tar.gz
-    version: 2.11.0.2
-  updated: 2020-10-16 05:53:14.262992+00:00
+    archive_url: https://hackage.haskell.org/package/pandoc-2.11.0.3/pandoc-2.11.0.3.tar.gz
+    version: 2.11.0.3
+  updated: 2020-10-23 04:47:52.634173+00:00
 python3-defaults: !FeedEntry
   id: urn:uuid:d9c02a6e-0729-11eb-892b-3d0aaa6ff633
   package_name: python3-defaults
