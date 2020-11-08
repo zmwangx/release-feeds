@@ -13,7 +13,7 @@ import urllib.parse
 import uuid
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple, cast
 
 import jinja2
 import requests
@@ -37,7 +37,7 @@ feeds_txt = generated_dir / "feeds.txt"
 logfile = logfiles.generate_logfile_path()
 
 session = requests.Session()
-session.request = functools.partial(session.request, timeout=5)
+session.request = functools.partial(session.request, timeout=5)  # type: ignore
 
 
 def init_logger() -> logging.Logger:
@@ -119,7 +119,7 @@ def iso8601_format(dt: datetime.datetime) -> str:
 
 
 def iso8601_parse(s: str) -> datetime.datetime:
-    return datetime.strptime(s, "%Y-%m-%dT%H:%M:%S%z")
+    return datetime.datetime.strptime(s, "%Y-%m-%dT%H:%M:%S%z")
 
 
 jinja_env = jinja2.Environment(autoescape=True, keep_trailing_newline=True)
@@ -240,8 +240,8 @@ def uscan(package: str, source_dir: pathlib.Path) -> PackageVersion:
         raise RuntimeError(f"uscan for {package} failed")
     try:
         tree = ET.fromstring(report)
-        version = tree.find("./upstream-version").text
-        archive_url = tree.find("./upstream-url").text
+        version = cast(str, cast(ET.Element, tree.find("./upstream-version")).text)
+        archive_url = cast(str, cast(ET.Element, tree.find("./upstream-url")).text)
     except ET.ParseError:
         raise RuntimeError(f"malformed report for {package}: {report}")
     return PackageVersion(version, archive_url)
@@ -278,7 +278,7 @@ def try_updating_entry(
 # the registry, now delisted from config).
 def update_registry(
     packages: List[str], *, jobs: int = 1
-) -> Tuple[Registry, List[str], List[str]]:
+) -> Tuple[Registry, List[str], List[str], List[str]]:
     registry: Registry = dict()
     if registry_yml.exists():
         with registry_yml.open(encoding="utf-8") as fp:
