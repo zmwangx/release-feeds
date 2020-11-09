@@ -12,7 +12,7 @@ import threading
 import urllib.parse
 import uuid
 import xml.etree.ElementTree as ET
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Tuple, cast
 
 import jinja2
@@ -35,6 +35,10 @@ used_config_yml = generated_dir / "used_config.yml"
 registry_yml = generated_dir / "registry.yml"
 feeds_txt = generated_dir / "feeds.txt"
 logfile = logfiles.generate_logfile_path()
+
+persisted_dir = root / "cache"
+persisted_dir.mkdir(exist_ok=True)
+persisted_data_yml = persisted_dir / "persisted_data.yml"
 
 session = requests.Session()
 session.request = functools.partial(session.request, timeout=5)  # type: ignore
@@ -110,8 +114,42 @@ class Feed(SafeLoadableYAMLObject):
 Registry = Dict[str, FeedEntry]
 
 
+@dataclass
+class Persisted(SafeLoadableYAMLObject):
+    yaml_tag = "!Persisted"
+    last_successful_crawls: Dict[str, datetime.datetime] = field(default_factory=dict)
+
+    # A custom serializer so that timestamps aren't shown in repr form.
+    def __str__(self):
+        last_successful_crawls = {
+            package: str(timestamp)
+            for package, timestamp in self.last_successful_crawls.items()
+        }
+        return f"Persisted(last_successful_crawls={last_successful_crawls})"
+
+
+# Global singleton.
+persisted_data = Persisted()
+
+
 class RetriableException(Exception):
     pass
+
+
+class IgnorableException(RetriableException):
+    pass
+
+
+# Debian's shitty sources.debian.org API routinely fails to return the
+# sid version, so we need to make a special exception for this exception
+# to reduce false positive alerts.
+class NoSidVersionFound(IgnorableException):
+    pass
+
+
+# Time we can tolerate an IgnorableException to repeat before finally
+# failing an update and alerting the human overseer.
+IGNORE_THRESHOLD = datetime.timedelta(hours=1)
 
 
 def iso8601_format(dt: datetime.datetime) -> str:
@@ -200,7 +238,7 @@ def download_watch_file(package: str, destdir: pathlib.Path) -> None:
             version: str = version_info["version"]
             break
     else:
-        raise RetriableException(f"no sid version found for {package}: {r.text}")
+        raise NoSidVersionFound(f"no sid version found for {package}: {r.text}")
 
     # Get URL of debian/watch in the latest version.
     url = f"https://sources.debian.org/api/src/{package}/{version}/debian/watch"
@@ -287,6 +325,7 @@ def update_registry(
     removed_packages = [package for package in registry if package not in packages]
     for package in removed_packages:
         registry.pop(package)
+        persisted_data.last_successful_crawls.pop(package)
 
     updated_packages = []
     failed_packages = []
@@ -299,21 +338,50 @@ def update_registry(
             entry = try_updating_entry(package, existing_entry=existing_entry)
         except Exception as e:
             processed = False
+            ignorable = False
             if isinstance(e, tenacity.RetryError):
                 try:
                     e.reraise()
                 except RetriableException as wrapped_exc:
-                    logger.error(f"failed to update entry for {package}: {wrapped_exc}")
+                    last_successful_crawl = persisted_data.last_successful_crawls.get(
+                        package
+                    )
+                    if (
+                        isinstance(wrapped_exc, IgnorableException)
+                        and last_successful_crawl is not None
+                        and (
+                            delta := datetime.datetime.now(datetime.timezone.utc)
+                            - last_successful_crawl
+                        )
+                        < IGNORE_THRESHOLD
+                    ):
+                        approx_time_since_last_success_crawl = datetime.timedelta(
+                            seconds=round(delta.total_seconds())
+                        )
+                        logger.warning(
+                            f"failed to update entry for {package} "
+                            f"({approx_time_since_last_success_crawl} since last successful crawl): "
+                            f"{wrapped_exc}"
+                        )
+                        ignorable = True
+                    else:
+                        logger.error(
+                            f"failed to update entry for {package}: {wrapped_exc}"
+                        )
                     processed = True
                 except:
                     pass
             if not processed:
                 logger.error(f"failed to update entry for {package}", exc_info=True)
-            with lock:
-                failed_packages.append(package)
+            if not ignorable:
+                with lock:
+                    failed_packages.append(package)
             return
-        if entry:
-            with lock:
+        with lock:
+            persisted_data.last_successful_crawls[package] = datetime.datetime.now(
+                datetime.timezone.utc
+            )
+            if entry:
                 registry[package] = entry
                 updated_packages.append(package)
 
@@ -411,6 +479,24 @@ def dump_config(config: Config) -> None:
         fp.write(yaml.dump(config))
 
 
+def load_persisted_data() -> None:
+    global persisted_data
+    if not persisted_data_yml.exists():
+        return
+    with persisted_data_yml.open(encoding="utf-8") as fp:
+        loaded = yaml.safe_load(fp.read())
+    if not isinstance(loaded, Persisted):
+        logger.warning(f"malformed persisted data: got {loaded}")
+        return
+    persisted_data = loaded
+    logger.info(f"persisted: {persisted_data}")
+
+
+def dump_persisted_data() -> None:
+    with persisted_data_yml.open("w", encoding="utf-8") as fp:
+        fp.write(yaml.dump(persisted_data))
+
+
 def github_actions_set_env(key: str, value: Any) -> None:
     print(f"::set-env name={key}::{value}")
 
@@ -421,6 +507,7 @@ def main() -> int:
     parser.add_argument("--regenerate", action="store_true")
     args = parser.parse_args()
 
+    load_persisted_data()
     config, prior_config = load_config()
 
     github_actions_set_env("LOGFILE", logfile)
@@ -464,6 +551,8 @@ def main() -> int:
     else:
         # On normal exit, write config to used_config.yml.
         dump_config(config)
+    finally:
+        dump_persisted_data()
     return retcode
 
 
