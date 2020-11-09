@@ -136,6 +136,12 @@ class RetriableException(Exception):
     pass
 
 
+# uscan could fail for retriable reasons, most obviously temporary
+# network problems.
+class UscanFailed(RetriableException):
+    pass
+
+
 class IgnorableException(RetriableException):
     pass
 
@@ -269,13 +275,22 @@ def acquire_watch_file(package: str, destdir: pathlib.Path) -> None:
         download_watch_file(package, destdir)
 
 
+@tenacity.retry(
+    retry=tenacity.retry_if_exception_type(RetriableException),
+    wait=tenacity.wait_exponential(multiplier=2, max=15),
+    stop=tenacity.stop_after_attempt(3),
+    after=lambda retry_state: logger.warning(
+        f"retrying uscan for {retry_state.args[0]} "
+        f"(attempt #{retry_state.attempt_number})"
+    ),
+)
 def uscan(package: str, source_dir: pathlib.Path) -> PackageVersion:
     try:
         report = subprocess.check_output(
             ["uscan", "--safe", "--dehs"], cwd=source_dir, encoding="utf-8",
         )
     except subprocess.CalledProcessError:
-        raise RuntimeError(f"uscan for {package} failed")
+        raise UscanFailed(f"uscan for {package} failed")
     try:
         tree = ET.fromstring(report)
         version = cast(str, cast(ET.Element, tree.find("./upstream-version")).text)
