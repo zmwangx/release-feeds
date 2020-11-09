@@ -13,13 +13,6 @@ golang-defaults: !FeedEntry
     archive_url: https://golang.org/dl/go1.15.4.src.tar.gz
     version: 1.15.4
   updated: 2020-11-05 22:42:59.963851+00:00
-pandoc: !FeedEntry
-  id: urn:uuid:2672e140-217d-11eb-ba91-e342db45877e
-  package_name: pandoc
-  package_version: !PackageVersion
-    archive_url: https://hackage.haskell.org/package/pandoc-2.11.1.1/pandoc-2.11.1.1.tar.gz
-    version: 2.11.1.1
-  updated: 2020-11-08 04:44:56.462593+00:00
 python3-defaults: !FeedEntry
   id: urn:uuid:d9c02a6e-0729-11eb-892b-3d0aaa6ff633
   package_name: python3-defaults
