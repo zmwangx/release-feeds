@@ -3,6 +3,7 @@ import concurrent.futures
 import datetime
 import functools
 import logging
+import os
 import pathlib
 import shutil
 import subprocess
@@ -513,7 +514,14 @@ def dump_persisted_data() -> None:
 
 
 def github_actions_set_env(key: str, value: Any) -> None:
-    print(f"::set-env name={key}::{value}")
+    if os.getenv("GITHUB_ACTIONS") != "true":
+        return
+    GITHUB_ENV = os.getenv("GITHUB_ENV")
+    if not GITHUB_ENV:
+        logger.error("GITHUB_ENV not set or empty")
+        return
+    with open(GITHUB_ENV, "a") as fp:
+        print(f"{key}={value}", file=fp)
 
 
 def main() -> int:
