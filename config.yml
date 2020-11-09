@@ -39,7 +39,6 @@ feed: !FeedConfig
 packages:
   - ffmpeg
   - golang-defaults
-  - pandoc
   - python3-defaults
   - rustc
   - zsh
