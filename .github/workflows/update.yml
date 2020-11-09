@@ -12,7 +12,9 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: cache
-          key: cache-${{ github.ref }}
+          key: cache-${{ github.ref }}-${{ github.run_id }}
+          restore-keys: |
+            cache-${{ github.ref }}-
       - name: Install dependencies
         run: |
           sudo apt update
