@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2021-02-11T15:33:39Z</updated>
+  <updated>2021-02-16T19:29:13Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:3f8105b8-708d-11eb-85ea-93ac3e51b78a</id>
+    <title>golang-defaults 1.16</title>
+    <author>
+      <name>golang-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.16.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.16.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.16.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2021-02-16T19:29:12Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:82d35da6-6c7e-11eb-ba56-fdf895d55c5d</id>
     <title>rustc 1.50.0</title>
@@ -16,16 +26,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.50.0-src.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.50.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.50.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2021-02-11T15:33:38Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:9dcb994c-6739-11eb-ab4e-ed61e5b6f23f</id>
-    <title>golang-defaults 1.15.8</title>
-    <author>
-      <name>golang-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.15.8.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.15.8.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.15.8.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2021-02-04T22:37:52Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:c8799db6-38f3-11eb-a7ac-1fb17f823c76</id>
