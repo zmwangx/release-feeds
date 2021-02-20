@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2021-02-19T15:11:36Z</updated>
+  <updated>2021-02-20T20:46:53Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:c0293208-73bc-11eb-8054-01fb369b7282</id>
+    <title>ffmpeg 4.3.2</title>
+    <author>
+      <name>ffmpeg authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-4.3.2.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-4.3.2.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-4.3.2.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2021-02-20T20:46:47Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:be435642-72c4-11eb-acb2-953d7302ced2</id>
     <title>python3-defaults 3.9.2</title>
@@ -36,16 +46,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.50.0-src.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.50.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.50.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2021-02-11T15:33:38Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:4678283e-ca83-11ea-86f8-958da9b1b30d</id>
-    <title>ffmpeg 4.3.1</title>
-    <author>
-      <name>ffmpeg authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2020-07-20T12:19:36Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:4646548a-ca83-11ea-86f8-958da9b1b30d</id>

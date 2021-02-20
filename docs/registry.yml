@@ -1,11 +1,11 @@
 # AUTO-GENERATED -- DO NOT MODIFY
 ffmpeg: !FeedEntry
-  id: urn:uuid:4678283e-ca83-11ea-86f8-958da9b1b30d
+  id: urn:uuid:c0293208-73bc-11eb-8054-01fb369b7282
   package_name: ffmpeg
   package_version: !PackageVersion
-    archive_url: https://ffmpeg.org/releases/ffmpeg-4.3.1.tar.xz
-    version: 4.3.1
-  updated: 2020-07-20 12:19:36.002838+00:00
+    archive_url: https://ffmpeg.org/releases/ffmpeg-4.3.2.tar.xz
+    version: 4.3.2
+  updated: 2021-02-20 20:46:47.990528+00:00
 golang-defaults: !FeedEntry
   id: urn:uuid:3f8105b8-708d-11eb-85ea-93ac3e51b78a
   package_name: golang-defaults
