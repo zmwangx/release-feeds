@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2021-03-11T19:47:34Z</updated>
+  <updated>2021-03-25T22:06:30Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:5a084702-8db6-11eb-a442-a1cf52df2243</id>
+    <title>rustc 1.51.0</title>
+    <author>
+      <name>rustc authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.51.0-src.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.51.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.51.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2021-03-25T22:06:29Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:9f6f8d6a-82a2-11eb-9ac4-714f46441772</id>
     <title>golang-defaults 1.16.2</title>
@@ -36,16 +46,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2021-02-19T15:11:29Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:82d35da6-6c7e-11eb-ba56-fdf895d55c5d</id>
-    <title>rustc 1.50.0</title>
-    <author>
-      <name>rustc authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.50.0-src.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.50.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.50.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2021-02-11T15:33:38Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:4646548a-ca83-11ea-86f8-958da9b1b30d</id>
