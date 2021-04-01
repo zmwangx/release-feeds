@@ -5,16 +5,16 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2021-03-11T19:47:33Z</updated>
+  <updated>2021-04-01T21:31:43Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/golang-defaults.xml"/>
   <entry>
-    <id>urn:uuid:9f6f8d6a-82a2-11eb-9ac4-714f46441772</id>
-    <title>golang-defaults 1.16.2</title>
+    <id>urn:uuid:a70a0376-9331-11eb-abe7-174f6f082a31</id>
+    <title>golang-defaults 1.16.3</title>
     <author>
       <name>golang-defaults authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.16.2.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.16.2.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.16.2.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2021-03-11T19:47:33Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.16.3.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.16.3.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.16.3.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2021-04-01T21:31:43Z</updated>
   </entry>
 </feed>
