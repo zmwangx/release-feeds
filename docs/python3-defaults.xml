@@ -5,16 +5,16 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2021-02-19T15:11:29Z</updated>
+  <updated>2021-04-02T17:59:00Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/python3-defaults.xml"/>
   <entry>
-    <id>urn:uuid:be435642-72c4-11eb-acb2-953d7302ced2</id>
-    <title>python3-defaults 3.9.2</title>
+    <id>urn:uuid:1a5d71ae-93dd-11eb-bac3-c74c49f1b9a5</id>
+    <title>python3-defaults 3.9.3</title>
     <author>
       <name>python3-defaults authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2021-02-19T15:11:29Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.9.3/Python-3.9.3.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.9.3/Python-3.9.3.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.9.3/Python-3.9.3.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2021-04-02T17:59:00Z</updated>
   </entry>
 </feed>
