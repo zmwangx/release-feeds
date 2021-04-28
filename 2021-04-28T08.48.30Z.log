@@ -1,0 +1,24 @@
+2021-04-28 08:48:30 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2021-04-28 07:55:05.747164+00:00', 'golang-defaults': '2021-04-28 07:55:04.663638+00:00', 'python3-defaults': '2021-04-28 07:55:04.545771+00:00', 'rustc': '2021-04-28 07:55:04.668739+00:00', 'zsh': '2021-04-28 07:55:11.601265+00:00'})
+2021-04-28 08:48:30 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
+2021-04-28 08:48:30 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2021-04-28 08:48:30 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2021-04-28 08:48:30 [INFO] GET https://sources.debian.org/api/src/rustc/
+2021-04-28 08:48:30 [INFO] GET https://sources.debian.org/api/src/zsh/
+2021-04-28 08:48:30 [INFO] GET https://sources.debian.org/api/src/ffmpeg/7:4.3.2-0+deb11u1/debian/watch
+2021-04-28 08:48:30 [INFO] GET https://sources.debian.org/api/src/python3-defaults/3.9.2-3/debian/watch
+2021-04-28 08:48:30 [INFO] GET https://sources.debian.org/api/src/rustc/1.48.0+dfsg1-2/debian/watch
+2021-04-28 08:48:30 [INFO] GET https://sources.debian.org/api/src/zsh/5.8-6/debian/watch
+2021-04-28 08:48:31 [INFO] GET https://sources.debian.org/data/main/p/python3-defaults/3.9.2-3/debian/watch
+2021-04-28 08:48:31 [INFO] GET https://sources.debian.org/data/main/z/zsh/5.8-6/debian/watch
+2021-04-28 08:48:31 [INFO] GET https://sources.debian.org/data/main/f/ffmpeg/7:4.3.2-0+deb11u1/debian/watch
+2021-04-28 08:48:31 [INFO] GET https://sources.debian.org/data/main/r/rustc/1.48.0+dfsg1-2/debian/watch
+2021-04-28 08:48:32 [INFO] python3-defaults 3.9.4: https://www.python.org/ftp/python/3.9.4/Python-3.9.4.tar.xz
+2021-04-28 08:48:32 [INFO] rustc 1.51.0: https://static.rust-lang.org/dist/rustc-1.51.0-src.tar.xz
+2021-04-28 08:48:32 [INFO] golang-defaults 1.16.3: https://golang.org/dl/go1.16.3.src.tar.gz
+2021-04-28 08:48:33 [INFO] ffmpeg 4.4: https://ffmpeg.org/releases/ffmpeg-4.4.tar.xz
+2021-04-28 08:48:48 [WARNING] retrying uscan for zsh (attempt #1)
+2021-04-28 08:48:50 [WARNING] retrying uscan for zsh (attempt #2)
+2021-04-28 08:48:54 [WARNING] retrying uscan for zsh (attempt #3)
+2021-04-28 08:48:54 [ERROR] failed to update entry for zsh: uscan for zsh failed
+2021-04-28 08:48:54 [INFO] no updates found
+2021-04-28 08:48:54 [ERROR] failed: zsh
