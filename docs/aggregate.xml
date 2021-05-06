@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2021-05-03T18:51:17Z</updated>
+  <updated>2021-05-06T18:44:27Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:15c66b4a-ae9b-11eb-a161-1191976a5dc2</id>
+    <title>golang-defaults 1.16.4</title>
+    <author>
+      <name>golang-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.16.4.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.16.4.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.16.4.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2021-05-06T18:44:27Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:8a86b2f8-ac40-11eb-b542-a7738459e022</id>
     <title>python3-defaults 3.9.5</title>
@@ -26,16 +36,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-4.4.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-4.4.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-4.4.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2021-04-08T21:49:54Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:a70a0376-9331-11eb-abe7-174f6f082a31</id>
-    <title>golang-defaults 1.16.3</title>
-    <author>
-      <name>golang-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.16.3.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.16.3.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.16.3.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2021-04-01T21:31:43Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:5a084702-8db6-11eb-a442-a1cf52df2243</id>
