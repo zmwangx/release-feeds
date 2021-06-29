@@ -1,0 +1,24 @@
+2021-06-29 23:16:01 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2021-06-29 22:52:54.739832+00:00', 'golang-defaults': '2021-06-29 22:52:53.875350+00:00', 'python3-defaults': '2021-06-29 22:52:53.184946+00:00', 'rustc': '2021-06-29 22:52:53.662232+00:00', 'zsh': '2021-06-29 22:52:53.655427+00:00'})
+2021-06-29 23:16:01 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
+2021-06-29 23:16:01 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2021-06-29 23:16:01 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2021-06-29 23:16:01 [INFO] GET https://sources.debian.org/api/src/zsh/
+2021-06-29 23:16:01 [INFO] GET https://sources.debian.org/api/src/rustc/
+2021-06-29 23:16:01 [INFO] GET https://sources.debian.org/api/src/python3-defaults/3.9.2-3/debian/watch
+2021-06-29 23:16:01 [INFO] GET https://sources.debian.org/api/src/ffmpeg/7:4.3.2-0+deb11u2/debian/watch
+2021-06-29 23:16:01 [INFO] GET https://sources.debian.org/api/src/rustc/1.48.0+dfsg1-2/debian/watch
+2021-06-29 23:16:01 [INFO] GET https://sources.debian.org/api/src/zsh/5.8-6/debian/watch
+2021-06-29 23:16:01 [INFO] GET https://sources.debian.org/data/main/p/python3-defaults/3.9.2-3/debian/watch
+2021-06-29 23:16:01 [INFO] GET https://sources.debian.org/data/main/f/ffmpeg/7:4.3.2-0+deb11u2/debian/watch
+2021-06-29 23:16:01 [INFO] GET https://sources.debian.org/data/main/z/zsh/5.8-6/debian/watch
+2021-06-29 23:16:02 [INFO] GET https://sources.debian.org/data/main/r/rustc/1.48.0+dfsg1-2/debian/watch
+2021-06-29 23:16:02 [INFO] python3-defaults 3.9.6: https://www.python.org/ftp/python/3.9.6/Python-3.9.6.tar.xz
+2021-06-29 23:16:03 [INFO] golang-defaults 1.16.5: https://golang.org/dl/go1.16.5.src.tar.gz
+2021-06-29 23:16:03 [INFO] zsh 5.8: https://www.zsh.org/pub/zsh-5.8.tar.xz
+2021-06-29 23:16:03 [INFO] rustc 1.53.0: https://static.rust-lang.org/dist/rustc-1.53.0-src.tar.xz
+2021-06-29 23:16:22 [WARNING] retrying uscan for ffmpeg (attempt #1)
+2021-06-29 23:16:45 [WARNING] retrying uscan for ffmpeg (attempt #2)
+2021-06-29 23:17:09 [WARNING] retrying uscan for ffmpeg (attempt #3)
+2021-06-29 23:17:09 [ERROR] failed to update entry for ffmpeg: uscan for ffmpeg failed
+2021-06-29 23:17:09 [INFO] no updates found
+2021-06-29 23:17:09 [ERROR] failed: ffmpeg
