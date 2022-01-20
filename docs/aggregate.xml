@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-01-17T15:16:33Z</updated>
+  <updated>2022-01-20T22:16:06Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:8fa4e026-7a3e-11ec-8dd5-e1bb7714cc55</id>
+    <title>rustc 1.58.1</title>
+    <author>
+      <name>rustc authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.58.1-src.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.58.1-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.58.1-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-01-20T22:16:05Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:739ee11c-77a8-11ec-8315-2d5f5f8e6585</id>
     <title>python3-defaults 3.10.2</title>
@@ -26,16 +36,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-5.0.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-5.0.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-5.0.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2022-01-14T19:33:18Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:716cc748-74be-11ec-a087-7bd01497d301</id>
-    <title>rustc 1.58.0</title>
-    <author>
-      <name>rustc authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.58.0-src.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.58.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.58.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-01-13T22:16:23Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:55ce02a6-6f30-11ec-9e0e-65b07489e38f</id>
