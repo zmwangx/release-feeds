@@ -5,16 +5,16 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-02-10T22:43:00Z</updated>
+  <updated>2022-03-03T20:16:26Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/golang-defaults.xml"/>
   <entry>
-    <id>urn:uuid:ccebba9c-8ac2-11ec-bad1-e76600ea520d</id>
-    <title>golang-defaults 1.17.7</title>
+    <id>urn:uuid:ce13034a-9b2e-11ec-9ea6-e326801c61df</id>
+    <title>golang-defaults 1.17.8</title>
     <author>
       <name>golang-defaults authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.17.7.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.17.7.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.17.7.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-02-10T22:43:00Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.17.8.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.17.8.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.17.8.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-03-03T20:16:26Z</updated>
   </entry>
 </feed>
