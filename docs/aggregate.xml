@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-04-04T20:18:48Z</updated>
+  <updated>2022-04-07T22:05:51Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:e33d94e6-b6be-11ec-b382-cf4fc0158322</id>
+    <title>rustc 1.60.0</title>
+    <author>
+      <name>rustc authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.60.0-src.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.60.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.60.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-04-07T22:05:51Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:6facdf4e-b454-11ec-b334-47472d4b61f7</id>
     <title>ffmpeg 5.0.1</title>
@@ -36,16 +46,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.18.src.tar.gz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.18.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.18.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2022-03-15T17:04:55Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:66f2bbfc-95bf-11ec-9304-85f8b9ce7859</id>
-    <title>rustc 1.59.0</title>
-    <author>
-      <name>rustc authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.59.0-src.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.59.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.59.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-02-24T22:16:24Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:497b8a18-8c19-11ec-be2d-2bbf058b98f8</id>
