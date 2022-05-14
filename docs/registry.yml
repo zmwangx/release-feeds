@@ -28,9 +28,9 @@ rustc: !FeedEntry
     version: 1.60.0
   updated: 2022-04-07 22:05:51.416078+00:00
 zsh: !FeedEntry
-  id: urn:uuid:497b8a18-8c19-11ec-be2d-2bbf058b98f8
+  id: urn:uuid:c8fa000e-d3c6-11ec-bac2-a19069c1af25
   package_name: zsh
   package_version: !PackageVersion
-    archive_url: https://www.zsh.org/pub/zsh-5.8.1.tar.xz
-    version: 5.8.1
-  updated: 2022-02-12 15:34:37.654881+00:00
+    archive_url: https://www.zsh.org/pub/zsh-5.9.tar.xz
+    version: '5.9'
+  updated: 2022-05-14 20:45:27.045682+00:00
