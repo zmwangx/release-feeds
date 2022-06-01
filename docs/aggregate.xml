@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-05-19T22:16:27Z</updated>
+  <updated>2022-06-01T20:48:58Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:41ca1ed2-e1ec-11ec-b0ab-d5e5feb0c28a</id>
+    <title>golang-defaults 1.18.3</title>
+    <author>
+      <name>golang-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.18.3.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.18.3.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.18.3.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-06-01T20:48:57Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:52ff081e-d7c1-11ec-bbd5-47577277a75a</id>
     <title>rustc 1.61.0</title>
@@ -26,16 +36,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://www.zsh.org/pub/zsh-5.9.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.zsh.org/pub/zsh-5.9.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.zsh.org/pub/zsh-5.9.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2022-05-14T20:45:27Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:cefa933a-d09f-11ec-9c00-23aa687466bc</id>
-    <title>golang-defaults 1.18.2</title>
-    <author>
-      <name>golang-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.18.2.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.18.2.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.18.2.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-05-10T20:28:53Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:6facdf4e-b454-11ec-b334-47472d4b61f7</id>
