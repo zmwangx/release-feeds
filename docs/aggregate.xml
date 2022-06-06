@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-06-01T20:48:58Z</updated>
+  <updated>2022-06-06T17:18:08Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:a1d69462-e5bc-11ec-be1b-091d84295b95</id>
+    <title>python3-defaults 3.10.5</title>
+    <author>
+      <name>python3-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-06-06T17:18:07Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:41ca1ed2-e1ec-11ec-b0ab-d5e5feb0c28a</id>
     <title>golang-defaults 1.18.3</title>
@@ -46,15 +56,5 @@
     <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-5.0.1.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-5.0.1.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-5.0.1.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2022-04-04T20:18:48Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:7ef99612-ab5e-11ec-aa8d-3b7951958479</id>
-    <title>python3-defaults 3.10.4</title>
-    <author>
-      <name>python3-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.10.4/Python-3.10.4.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-03-24T10:38:08Z</updated>
   </entry>
 </feed>
