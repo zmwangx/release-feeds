@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-06-06T17:18:08Z</updated>
+  <updated>2022-06-30T22:16:31Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:4aaaceec-f8c2-11ec-9ae7-178fb7e6dc53</id>
+    <title>rustc 1.62.0</title>
+    <author>
+      <name>rustc authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.62.0-src.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.62.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.62.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-06-30T22:16:30Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:a1d69462-e5bc-11ec-be1b-091d84295b95</id>
     <title>python3-defaults 3.10.5</title>
@@ -26,16 +36,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.18.3.src.tar.gz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.18.3.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.18.3.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2022-06-01T20:48:57Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:52ff081e-d7c1-11ec-bbd5-47577277a75a</id>
-    <title>rustc 1.61.0</title>
-    <author>
-      <name>rustc authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.61.0-src.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.61.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.61.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-05-19T22:16:26Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:c8fa000e-d3c6-11ec-bac2-a19069c1af25</id>
