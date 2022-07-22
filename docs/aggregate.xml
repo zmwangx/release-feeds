@@ -5,17 +5,17 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-07-22T18:17:10Z</updated>
+  <updated>2022-07-22T18:32:01Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
   <entry>
-    <id>urn:uuid:80ec6978-09ea-11ed-bb23-f935c5d78224</id>
+    <id>urn:uuid:939c5e0a-09ec-11ed-b62f-9158ed80d725</id>
     <title>ffmpeg 5.1</title>
     <author>
       <name>ffmpeg authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-5.1.tar.bz2"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-5.1.tar.bz2&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-5.1.tar.bz2&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-07-22T18:17:10Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-5.1.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-5.1.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-5.1.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-07-22T18:32:01Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:7e92d8ec-07b0-11ed-b597-dbf289470e0b</id>
