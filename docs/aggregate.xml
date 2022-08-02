@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-08-01T15:18:12Z</updated>
+  <updated>2022-08-02T10:17:29Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:4fd1920e-124c-11ed-ad56-efb4e1278a54</id>
+    <title>python3-defaults 3.10.6</title>
+    <author>
+      <name>python3-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.10.6/Python-3.10.6.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.10.6/Python-3.10.6.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.10.6/Python-3.10.6.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-08-02T10:17:28Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:280863d2-11ad-11ed-8c49-1dcc47f288bf</id>
     <title>golang-defaults 1.18.5</title>
@@ -36,16 +46,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.62.1-src.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.62.1-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.62.1-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2022-07-19T22:16:53Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:a1d69462-e5bc-11ec-be1b-091d84295b95</id>
-    <title>python3-defaults 3.10.5</title>
-    <author>
-      <name>python3-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-06-06T17:18:07Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:c8fa000e-d3c6-11ec-bac2-a19069c1af25</id>

@@ -14,12 +14,12 @@ golang-defaults: !FeedEntry
     version: 1.18.5
   updated: 2022-08-01 15:18:11.700826+00:00
 python3-defaults: !FeedEntry
-  id: urn:uuid:a1d69462-e5bc-11ec-be1b-091d84295b95
+  id: urn:uuid:4fd1920e-124c-11ed-ad56-efb4e1278a54
   package_name: python3-defaults
   package_version: !PackageVersion
-    archive_url: https://www.python.org/ftp/python/3.10.5/Python-3.10.5.tar.xz
-    version: 3.10.5
-  updated: 2022-06-06 17:18:07.345117+00:00
+    archive_url: https://www.python.org/ftp/python/3.10.6/Python-3.10.6.tar.xz
+    version: 3.10.6
+  updated: 2022-08-02 10:17:28.430480+00:00
 rustc: !FeedEntry
   id: urn:uuid:7e92d8ec-07b0-11ed-b597-dbf289470e0b
   package_name: rustc
