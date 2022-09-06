@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-08-31T19:26:13Z</updated>
+  <updated>2022-09-06T09:28:58Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:54ef0e0c-2dc6-11ed-90eb-d1f6c6a105ef</id>
+    <title>python3-defaults 3.10.7</title>
+    <author>
+      <name>python3-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.10.7/Python-3.10.7.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-09-06T09:28:57Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:c6df1524-2962-11ed-b6d1-5f351e3c1709</id>
     <title>ffmpeg 5.1.1</title>
@@ -36,16 +46,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.19.src.tar.gz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.19.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.19.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2022-08-02T17:09:52Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:4fd1920e-124c-11ed-ad56-efb4e1278a54</id>
-    <title>python3-defaults 3.10.6</title>
-    <author>
-      <name>python3-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.10.6/Python-3.10.6.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.10.6/Python-3.10.6.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.10.6/Python-3.10.6.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-08-02T10:17:28Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:c8fa000e-d3c6-11ec-bac2-a19069c1af25</id>
