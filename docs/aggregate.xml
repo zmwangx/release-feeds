@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-09-06T16:33:16Z</updated>
+  <updated>2022-09-22T22:17:06Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:4a4e60aa-3ac4-11ed-a40e-f597e7344a5a</id>
+    <title>rustc 1.64.0</title>
+    <author>
+      <name>rustc authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.64.0-src.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.64.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.64.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-09-22T22:17:05Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:9b7a8848-2e01-11ed-8748-7f2fd8fdbdb0</id>
     <title>golang-defaults 1.19.1</title>
@@ -36,16 +46,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-5.1.1.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-5.1.1.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-5.1.1.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2022-08-31T19:26:13Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:430ac9ea-19c3-11ed-b34b-71c2a9324061</id>
-    <title>rustc 1.63.0</title>
-    <author>
-      <name>rustc authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.63.0-src.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.63.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.63.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-08-11T22:16:35Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:c8fa000e-d3c6-11ec-bac2-a19069c1af25</id>
