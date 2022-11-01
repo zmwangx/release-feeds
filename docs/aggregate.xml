@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-10-25T04:02:07Z</updated>
+  <updated>2022-11-01T16:53:34Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:b8202798-5a05-11ed-aeb3-f5219e46f9d8</id>
+    <title>golang-defaults 1.19.3</title>
+    <author>
+      <name>golang-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.19.3.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.19.3.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.19.3.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-11-01T16:53:32Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:ca92a0a0-5419-11ed-86a2-030e5cbf715b</id>
     <title>python3-defaults 3.11.0</title>
@@ -16,16 +26,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2022-10-25T04:02:06Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:9fea02f0-440e-11ed-bf2a-e704cd26aadb</id>
-    <title>golang-defaults 1.19.2</title>
-    <author>
-      <name>golang-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.19.2.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.19.2.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.19.2.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-10-04T18:01:52Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:24909798-3cbd-11ed-96c9-8fb7935b409b</id>
