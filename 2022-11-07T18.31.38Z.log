@@ -1,0 +1,24 @@
+2022-11-07 18:31:38 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2022-11-07 18:18:07.002899+00:00', 'golang-defaults': '2022-11-07 18:18:06.196221+00:00', 'python3-defaults': '2022-11-07 18:18:05.713080+00:00', 'rustc': '2022-11-07 18:18:05.885826+00:00', 'zsh': '2022-11-07 18:18:06.013591+00:00'})
+2022-11-07 18:31:38 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
+2022-11-07 18:31:38 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2022-11-07 18:31:38 [INFO] GET https://sources.debian.org/api/src/rustc/
+2022-11-07 18:31:38 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2022-11-07 18:31:38 [INFO] GET https://sources.debian.org/api/src/zsh/
+2022-11-07 18:31:38 [INFO] GET https://sources.debian.org/api/src/python3-defaults/3.10.6-1/debian/watch
+2022-11-07 18:31:38 [INFO] GET https://sources.debian.org/api/src/rustc/1.62.1+dfsg1-1/debian/watch
+2022-11-07 18:31:38 [INFO] GET https://sources.debian.org/api/src/ffmpeg/7:5.1.2-1/debian/watch
+2022-11-07 18:31:38 [INFO] GET https://sources.debian.org/api/src/zsh/5.9-1/debian/watch
+2022-11-07 18:31:38 [INFO] GET https://sources.debian.org/data/main/p/python3-defaults/3.10.6-1/debian/watch
+2022-11-07 18:31:39 [INFO] GET https://sources.debian.org/data/main/f/ffmpeg/7%3A5.1.2-1/debian/watch
+2022-11-07 18:31:39 [INFO] GET https://sources.debian.org/data/main/r/rustc/1.62.1%2Bdfsg1-1/debian/watch
+2022-11-07 18:31:39 [INFO] GET https://sources.debian.org/data/main/z/zsh/5.9-1/debian/watch
+2022-11-07 18:31:39 [INFO] python3-defaults 3.11.0: https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tar.xz
+2022-11-07 18:31:39 [INFO] rustc 1.65.0: https://static.rust-lang.org/dist/rustc-1.65.0-src.tar.xz
+2022-11-07 18:31:40 [INFO] golang-defaults 1.19.3: https://golang.org/dl/go1.19.3.src.tar.gz
+2022-11-07 18:31:40 [INFO] zsh 5.9: https://www.zsh.org/pub/zsh-5.9.tar.xz
+2022-11-07 18:31:44 [WARNING] retrying uscan for ffmpeg (attempt #1)
+2022-11-07 18:31:46 [WARNING] retrying uscan for ffmpeg (attempt #2)
+2022-11-07 18:31:51 [WARNING] retrying uscan for ffmpeg (attempt #3)
+2022-11-07 18:31:51 [ERROR] failed to update entry for ffmpeg: uscan for ffmpeg failed
+2022-11-07 18:31:51 [INFO] no updates found
+2022-11-07 18:31:51 [ERROR] failed: ffmpeg
