@@ -5,16 +5,16 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-10-25T04:02:06Z</updated>
+  <updated>2022-12-06T21:24:37Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/python3-defaults.xml"/>
   <entry>
-    <id>urn:uuid:ca92a0a0-5419-11ed-86a2-030e5cbf715b</id>
-    <title>python3-defaults 3.11.0</title>
+    <id>urn:uuid:6321ce6e-75ac-11ed-9c4e-317ee4cd2810</id>
+    <title>python3-defaults 3.11.1</title>
     <author>
       <name>python3-defaults authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.11.0/Python-3.11.0.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-10-25T04:02:06Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-12-06T21:24:37Z</updated>
   </entry>
 </feed>
