@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-12-06T21:24:38Z</updated>
+  <updated>2022-12-15T22:15:54Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:0a22e6ba-7cc6-11ed-a080-dfd3902c9c19</id>
+    <title>rustc 1.66.0</title>
+    <author>
+      <name>rustc authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.66.0-src.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.66.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.66.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2022-12-15T22:15:53Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:6321ce6e-75ac-11ed-9c4e-317ee4cd2810</id>
     <title>python3-defaults 3.11.1</title>
@@ -26,16 +36,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.19.4.src.tar.gz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.19.4.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.19.4.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2022-12-06T19:33:16Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:2190e634-5bc5-11ed-a12e-ad27f0228b9a</id>
-    <title>rustc 1.65.0</title>
-    <author>
-      <name>rustc authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.65.0-src.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.65.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.65.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-11-03T22:16:14Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:24909798-3cbd-11ed-96c9-8fb7935b409b</id>
