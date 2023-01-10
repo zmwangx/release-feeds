@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2022-12-15T22:15:54Z</updated>
+  <updated>2023-01-10T18:28:54Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:a27d11e4-9114-11ed-b912-85d7e6277390</id>
+    <title>golang-defaults 1.19.5</title>
+    <author>
+      <name>golang-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.19.5.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.19.5.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.19.5.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2023-01-10T18:28:52Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:0a22e6ba-7cc6-11ed-a080-dfd3902c9c19</id>
     <title>rustc 1.66.0</title>
@@ -26,16 +36,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.11.1/Python-3.11.1.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2022-12-06T21:24:37Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:d4fc1bbc-759c-11ed-9029-f72a8415921d</id>
-    <title>golang-defaults 1.19.4</title>
-    <author>
-      <name>golang-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.19.4.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.19.4.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.19.4.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2022-12-06T19:33:16Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:24909798-3cbd-11ed-96c9-8fb7935b409b</id>
