@@ -1,0 +1,24 @@
+2023-03-18 08:35:26 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2023-03-18 08:27:23.261440+00:00', 'golang-defaults': '2023-03-18 08:27:22.455469+00:00', 'python3-defaults': '2023-03-18 08:27:22.141750+00:00', 'rustc': '2023-03-18 08:27:22.340298+00:00', 'zsh': '2023-03-18 08:27:22.668234+00:00'})
+2023-03-18 08:35:26 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/api/src/rustc/
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/api/src/zsh/
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/api/src/rustc/1.63.0+dfsg1-2/debian/watch
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/api/src/python3-defaults/3.11.2-1/debian/watch
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/api/src/ffmpeg/7:5.1.2-3/debian/watch
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/api/src/zsh/5.9-4/debian/watch
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/data/main/r/rustc/1.63.0%2Bdfsg1-2/debian/watch
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/data/main/p/python3-defaults/3.11.2-1/debian/watch
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/data/main/z/zsh/5.9-4/debian/watch
+2023-03-18 08:35:26 [INFO] GET https://sources.debian.org/data/main/f/ffmpeg/7%3A5.1.2-3/debian/watch
+2023-03-18 08:35:27 [INFO] python3-defaults 3.11.2: https://www.python.org/ftp/python/3.11.2/Python-3.11.2.tar.xz
+2023-03-18 08:35:27 [INFO] rustc 1.68.0: https://static.rust-lang.org/dist/rustc-1.68.0-src.tar.xz
+2023-03-18 08:35:27 [INFO] zsh 5.9: https://www.zsh.org/pub/zsh-5.9.tar.xz
+2023-03-18 08:35:28 [INFO] ffmpeg 6.0: https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
+2023-03-18 08:35:46 [WARNING] retrying uscan for golang-defaults (attempt #1)
+2023-03-18 08:35:48 [WARNING] retrying uscan for golang-defaults (attempt #2)
+2023-03-18 08:35:52 [WARNING] retrying uscan for golang-defaults (attempt #3)
+2023-03-18 08:35:52 [ERROR] failed to update entry for golang-defaults: uscan for golang-defaults failed
+2023-03-18 08:35:52 [INFO] no updates found
+2023-03-18 08:35:52 [ERROR] failed: golang-defaults
