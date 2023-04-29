@@ -1,0 +1,24 @@
+2023-04-29 15:15:31 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2023-04-29 15:03:33.489193+00:00', 'golang-defaults': '2023-04-29 15:03:32.329339+00:00', 'python3-defaults': '2023-04-29 15:03:32.267738+00:00', 'rustc': '2023-04-29 15:03:32.424619+00:00', 'zsh': '2023-04-29 15:03:32.731724+00:00'})
+2023-04-29 15:15:31 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/api/src/rustc/
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/api/src/zsh/
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/api/src/python3-defaults/3.11.2-1/debian/watch
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/api/src/rustc/1.63.0+dfsg1-2/debian/watch
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/api/src/ffmpeg/7:5.1.3-1/debian/watch
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/api/src/zsh/5.9-4/debian/watch
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/data/main/r/rustc/1.63.0%2Bdfsg1-2/debian/watch
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/data/main/p/python3-defaults/3.11.2-1/debian/watch
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/data/main/f/ffmpeg/7%3A5.1.3-1/debian/watch
+2023-04-29 15:15:31 [INFO] GET https://sources.debian.org/data/main/z/zsh/5.9-4/debian/watch
+2023-04-29 15:15:32 [WARNING] retrying uscan for golang-defaults (attempt #1)
+2023-04-29 15:15:32 [INFO] python3-defaults 3.11.3: https://www.python.org/ftp/python/3.11.3/Python-3.11.3.tar.xz
+2023-04-29 15:15:32 [INFO] rustc 1.69.0: https://static.rust-lang.org/dist/rustc-1.69.0-src.tar.xz
+2023-04-29 15:15:33 [INFO] zsh 5.9: https://www.zsh.org/pub/zsh-5.9.tar.xz
+2023-04-29 15:15:34 [INFO] ffmpeg 6.0: https://ffmpeg.org/releases/ffmpeg-6.0.tar.xz
+2023-04-29 15:15:34 [WARNING] retrying uscan for golang-defaults (attempt #2)
+2023-04-29 15:15:39 [WARNING] retrying uscan for golang-defaults (attempt #3)
+2023-04-29 15:15:39 [ERROR] failed to update entry for golang-defaults: uscan for golang-defaults failed
+2023-04-29 15:15:39 [INFO] no updates found
+2023-04-29 15:15:39 [ERROR] failed: golang-defaults
