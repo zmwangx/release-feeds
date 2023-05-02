@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2023-04-20T22:15:27Z</updated>
+  <updated>2023-05-02T17:32:54Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:5e7f063e-e90f-11ed-9f32-17d6869dd2cf</id>
+    <title>golang-defaults 1.20.4</title>
+    <author>
+      <name>golang-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.20.4.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.20.4.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.20.4.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2023-05-02T17:32:53Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:d9cbdbaa-dfc8-11ed-a967-0d24a89bb547</id>
     <title>rustc 1.69.0</title>
@@ -26,16 +36,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.11.3/Python-3.11.3.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.11.3/Python-3.11.3.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.11.3/Python-3.11.3.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2023-04-05T11:23:26Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:cbcbd0e4-d30e-11ed-b768-a9b85ce6ecf5</id>
-    <title>golang-defaults 1.20.3</title>
-    <author>
-      <name>golang-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.20.3.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.20.3.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.20.3.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2023-04-04T17:33:22Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:a93359e8-b6ea-11ed-a053-271937ae5124</id>
