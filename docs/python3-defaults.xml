@@ -5,16 +5,16 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2023-04-05T11:23:26Z</updated>
+  <updated>2023-06-07T10:43:14Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/python3-defaults.xml"/>
   <entry>
-    <id>urn:uuid:48e89fcc-d3a4-11ed-9d90-2184d627363b</id>
-    <title>python3-defaults 3.11.3</title>
+    <id>urn:uuid:1ac2b97c-0520-11ee-8459-d1224352b4c0</id>
+    <title>python3-defaults 3.11.4</title>
     <author>
       <name>python3-defaults authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.11.3/Python-3.11.3.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.11.3/Python-3.11.3.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.11.3/Python-3.11.3.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2023-04-05T11:23:26Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2023-06-07T10:43:14Z</updated>
   </entry>
 </feed>
