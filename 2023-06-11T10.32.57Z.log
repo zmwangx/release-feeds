@@ -1,0 +1,113 @@
+2023-06-11 10:32:57 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2023-06-11 02:26:23.175764+00:00', 'golang-defaults': '2023-06-11 02:26:22.488772+00:00', 'python3-defaults': '2023-06-11 02:26:22.000106+00:00', 'rustc': '2023-06-11 02:26:21.999850+00:00', 'zsh': '2023-06-11 02:26:22.503880+00:00'})
+2023-06-11 10:32:57 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
+2023-06-11 10:32:57 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2023-06-11 10:32:57 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2023-06-11 10:32:57 [INFO] GET https://sources.debian.org/api/src/rustc/
+2023-06-11 10:32:57 [INFO] GET https://sources.debian.org/api/src/zsh/
+2023-06-11 10:32:57 [ERROR] failed to update entry for rustc
+Traceback (most recent call last):
+  File "src/update.py", line 354, in try_updating_registry_entry
+    entry = try_updating_entry(package, existing_entry=existing_entry)
+  File "src/update.py", line 319, in try_updating_entry
+    latest_version = get_package_version(package)
+  File "src/update.py", line 310, in get_package_version
+    acquire_watch_file(package, debian_dir)
+  File "src/update.py", line 276, in acquire_watch_file
+    download_watch_file(package, destdir)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 314, in iter
+    return fut.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "src/update.py", line 242, in download_watch_file
+    raise RuntimeError(f"GET {url}: {r.text}")
+RuntimeError: GET https://sources.debian.org/api/src/rustc/: {"error":404}
+
+2023-06-11 10:32:57 [ERROR] failed to update entry for python3-defaults
+Traceback (most recent call last):
+  File "src/update.py", line 354, in try_updating_registry_entry
+    entry = try_updating_entry(package, existing_entry=existing_entry)
+  File "src/update.py", line 319, in try_updating_entry
+    latest_version = get_package_version(package)
+  File "src/update.py", line 310, in get_package_version
+    acquire_watch_file(package, debian_dir)
+  File "src/update.py", line 276, in acquire_watch_file
+    download_watch_file(package, destdir)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 314, in iter
+    return fut.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "src/update.py", line 242, in download_watch_file
+    raise RuntimeError(f"GET {url}: {r.text}")
+RuntimeError: GET https://sources.debian.org/api/src/python3-defaults/: {"error":404}
+
+2023-06-11 10:32:57 [ERROR] failed to update entry for ffmpeg
+Traceback (most recent call last):
+  File "src/update.py", line 354, in try_updating_registry_entry
+    entry = try_updating_entry(package, existing_entry=existing_entry)
+  File "src/update.py", line 319, in try_updating_entry
+    latest_version = get_package_version(package)
+  File "src/update.py", line 310, in get_package_version
+    acquire_watch_file(package, debian_dir)
+  File "src/update.py", line 276, in acquire_watch_file
+    download_watch_file(package, destdir)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 314, in iter
+    return fut.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "src/update.py", line 242, in download_watch_file
+    raise RuntimeError(f"GET {url}: {r.text}")
+RuntimeError: GET https://sources.debian.org/api/src/ffmpeg/: {"error":404}
+
+2023-06-11 10:32:57 [ERROR] failed to update entry for zsh
+Traceback (most recent call last):
+  File "src/update.py", line 354, in try_updating_registry_entry
+    entry = try_updating_entry(package, existing_entry=existing_entry)
+  File "src/update.py", line 319, in try_updating_entry
+    latest_version = get_package_version(package)
+  File "src/update.py", line 310, in get_package_version
+    acquire_watch_file(package, debian_dir)
+  File "src/update.py", line 276, in acquire_watch_file
+    download_watch_file(package, destdir)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+    return self(f, *args, **kw)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 314, in iter
+    return fut.result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+    result = fn(*args, **kwargs)
+  File "src/update.py", line 242, in download_watch_file
+    raise RuntimeError(f"GET {url}: {r.text}")
+RuntimeError: GET https://sources.debian.org/api/src/zsh/: {"error":404}
+
+2023-06-11 10:32:58 [INFO] golang-defaults 1.20.5: https://golang.org/dl/go1.20.5.src.tar.gz
+2023-06-11 10:32:58 [INFO] no updates found
+2023-06-11 10:32:58 [ERROR] failed: rustc, python3-defaults, ffmpeg, zsh
