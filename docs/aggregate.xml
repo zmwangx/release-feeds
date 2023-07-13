@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2023-07-11T16:04:00Z</updated>
+  <updated>2023-07-13T22:16:15Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:e13cc87e-21ca-11ee-a116-ad45537990d2</id>
+    <title>rustc 1.71.0</title>
+    <author>
+      <name>rustc authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.71.0-src.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.71.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.71.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2023-07-13T22:16:14Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:8c32fd3e-2004-11ee-8ece-3ba67e72b897</id>
     <title>golang-defaults 1.20.6</title>
@@ -26,16 +36,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.11.4/Python-3.11.4.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2023-06-07T10:43:14Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:d02662c4-00c9-11ee-8b84-bb505b6c8237</id>
-    <title>rustc 1.70.0</title>
-    <author>
-      <name>rustc authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.70.0-src.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.70.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.70.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2023-06-01T22:15:27Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:a93359e8-b6ea-11ed-a053-271937ae5124</id>
