@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2023-09-06T15:42:51Z</updated>
+  <updated>2023-09-19T22:15:27Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:08d706ac-573a-11ee-9d1b-a7ef2583da22</id>
+    <title>rustc 1.72.1</title>
+    <author>
+      <name>rustc authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.72.1-src.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.72.1-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.72.1-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2023-09-19T22:15:26Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:093f8830-4ccc-11ee-a43f-e1271dc4c949</id>
     <title>golang-defaults 1.21.1</title>
@@ -16,16 +26,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.21.1.src.tar.gz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.21.1.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.21.1.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2023-09-06T15:42:50Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:afdf176a-42cb-11ee-9fbe-1f995a872848</id>
-    <title>rustc 1.72.0</title>
-    <author>
-      <name>rustc authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.72.0-src.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.72.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.72.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2023-08-24T22:15:09Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:2565bd08-42a0-11ee-b2c6-6d1f9267e916</id>
