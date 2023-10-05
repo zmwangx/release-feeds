@@ -7,12 +7,12 @@ ffmpeg: !FeedEntry
     version: '6.0'
   updated: 2023-02-27 22:04:09.567244+00:00
 golang-defaults: !FeedEntry
-  id: urn:uuid:093f8830-4ccc-11ee-a43f-e1271dc4c949
+  id: urn:uuid:70093e5a-63b3-11ee-a42f-d971b4aff0a3
   package_name: golang-defaults
   package_version: !PackageVersion
-    archive_url: https://golang.org/dl/go1.21.1.src.tar.gz
-    version: 1.21.1
-  updated: 2023-09-06 15:42:50.726406+00:00
+    archive_url: https://golang.org/dl/go1.21.2.src.tar.gz
+    version: 1.21.2
+  updated: 2023-10-05 19:14:42.501601+00:00
 python3-defaults: !FeedEntry
   id: urn:uuid:58b69c3c-613a-11ee-8e16-31376457dcea
   package_name: python3-defaults
