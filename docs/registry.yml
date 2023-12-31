@@ -1,11 +1,11 @@
 # AUTO-GENERATED -- DO NOT MODIFY
 ffmpeg: !FeedEntry
-  id: urn:uuid:1a79c2a2-8032-11ee-b551-45d6ef3ede6e
+  id: urn:uuid:22f45f1a-a77d-11ee-a2c7-990ef2f38c64
   package_name: ffmpeg
   package_version: !PackageVersion
-    archive_url: https://ffmpeg.org/releases/ffmpeg-6.1.tar.xz
-    version: '6.1'
-  updated: 2023-11-11 01:31:57.597239+00:00
+    archive_url: https://ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz
+    version: 6.1.1
+  updated: 2023-12-31 01:37:19.425607+00:00
 golang-defaults: !FeedEntry
   id: urn:uuid:d37fb230-939b-11ee-9501-79bc32ac2336
   package_name: golang-defaults
