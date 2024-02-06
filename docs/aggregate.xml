@@ -5,17 +5,17 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2024-01-09T18:24:02Z</updated>
+  <updated>2024-02-06T18:15:58Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
   <entry>
-    <id>urn:uuid:42e15174-af1c-11ee-b258-2b163b6e7f5b</id>
-    <title>golang-defaults 1.21.6</title>
+    <id>urn:uuid:c6eb2bd8-c51b-11ee-bbc4-915faf190fd4</id>
+    <title>golang-defaults 1.21.7</title>
     <author>
       <name>golang-defaults authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.21.6.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.21.6.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.21.6.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2024-01-09T18:24:01Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.21.7.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.21.7.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.21.7.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2024-02-06T18:15:58Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:22f45f1a-a77d-11ee-a2c7-990ef2f38c64</id>
