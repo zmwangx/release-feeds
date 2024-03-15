@@ -1,13 +1,13 @@
-2024-03-01 21:15:17 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2024-03-01 20:15:49.167483+00:00', 'golang-defaults': '2024-03-01 20:15:47.915471+00:00', 'python3-defaults': '2024-03-01 20:15:47.510423+00:00', 'rustc': '2024-03-01 20:15:48.020874+00:00', 'zsh': '2024-03-01 20:15:48.518565+00:00'})
-2024-03-01 21:15:17 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
-2024-03-01 21:15:17 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
-2024-03-01 21:15:17 [INFO] GET https://sources.debian.org/api/src/rustc/
-2024-03-01 21:15:17 [INFO] GET https://sources.debian.org/api/src/zsh/
-2024-03-01 21:15:17 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
-2024-03-01 21:15:18 [INFO] golang-defaults 1.22.0: https://golang.org/dl/go1.22.0.src.tar.gz
-2024-03-01 21:15:20 [WARNING] retrying download_watch_file for zsh (attempt #1)
-2024-03-01 21:15:21 [WARNING] retrying download_watch_file for rustc (attempt #1)
-2024-03-01 21:15:22 [ERROR] failed to update entry for python3-defaults
+2024-03-15 21:22:39 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2024-03-15 20:33:08.778063+00:00', 'golang-defaults': '2024-03-15 20:32:57.353670+00:00', 'python3-defaults': '2024-03-15 20:33:08.079252+00:00', 'rustc': '2024-03-15 20:33:08.036991+00:00', 'zsh': '2024-03-15 20:33:07.649198+00:00'})
+2024-03-15 21:22:39 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
+2024-03-15 21:22:39 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2024-03-15 21:22:39 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2024-03-15 21:22:39 [INFO] GET https://sources.debian.org/api/src/rustc/
+2024-03-15 21:22:39 [INFO] GET https://sources.debian.org/api/src/zsh/
+2024-03-15 21:22:41 [INFO] golang-defaults 1.22.1: https://golang.org/dl/go1.22.1.src.tar.gz
+2024-03-15 21:22:44 [INFO] GET https://sources.debian.org/api/src/rustc/1.70.0+dfsg1-7/debian/watch
+2024-03-15 21:22:44 [INFO] GET https://sources.debian.org/api/src/zsh/5.9-6/debian/watch
+2024-03-15 21:22:45 [ERROR] failed to update entry for ffmpeg
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -22,8 +22,6 @@ Traceback (most recent call last):
     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
   File "/usr/lib/python3.8/socket.py", line 669, in readinto
     return self._sock.recv_into(b)
-  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
-    return self.recv_into(*args, **kwargs)
   File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
     return self.recv_into(*args, **kwargs)
   File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 326, in recv_into
@@ -83,7 +81,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-03-01 21:15:22 [ERROR] failed to update entry for ffmpeg
+2024-03-15 21:22:45 [ERROR] failed to update entry for python3-defaults
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -98,8 +96,6 @@ Traceback (most recent call last):
     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
   File "/usr/lib/python3.8/socket.py", line 669, in readinto
     return self._sock.recv_into(b)
-  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
-    return self.recv_into(*args, **kwargs)
   File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
     return self.recv_into(*args, **kwargs)
   File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 326, in recv_into
@@ -159,16 +155,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-03-01 21:15:22 [INFO] GET https://sources.debian.org/api/src/zsh/
-2024-03-01 21:15:23 [INFO] GET https://sources.debian.org/api/src/rustc/
-2024-03-01 21:15:26 [WARNING] retrying download_watch_file for zsh (attempt #2)
-2024-03-01 21:15:26 [WARNING] retrying download_watch_file for rustc (attempt #2)
-2024-03-01 21:15:30 [INFO] GET https://sources.debian.org/api/src/zsh/
-2024-03-01 21:15:30 [INFO] GET https://sources.debian.org/api/src/rustc/
-2024-03-01 21:15:35 [WARNING] retrying download_watch_file for rustc (attempt #3)
-2024-03-01 21:15:35 [WARNING] failed to update entry for rustc (0:59:47 since last successful crawl): no sid version found for rustc: {"package":"rustc","path":"rustc","pathl":[["rustc","/src/rustc/"]],"suite":"","type":"package","versions":[{"area":"main","suites":["trixie"],"version":"1.70.0+dfsg1-7"},{"area":"main","suites":["trixie"],"version":"1.70.0+dfsg1-6"},{"area":"main","suites":["trixie","experimental"],"version":"1.70.0+dfsg1-5"},{"area":"main","suites":["trixie"],"version":"1.70.0+dfsg1-2"},{"area":"main","suites":["trixie"],"version":"1.70.0+dfsg1-1"},{"area":"main","suites":[],"version":"1.66.0+dfsg1-1"},{"area":"main","suites":["bookworm","trixie","bookworm-backports"],"version":"1.63.0+dfsg1-2"},{"area":"main","suites":["bullseye","bullseye-backports"],"version":"1.48.0+dfsg1-2"},{"area":"main","suites":["buster"],"version":"1.41.1+dfsg1-1~deb10u1"},{"area":"main","suites":["buster"],"version":"1.34.2+dfsg1-1"},{"area":"main","suites":["stretch"],"version":"1.34.2+dfsg1-1~deb9u1"}]}
-
-2024-03-01 21:15:35 [ERROR] failed to update entry for zsh
+2024-03-15 21:22:49 [ERROR] failed to update entry for rustc
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -229,7 +216,7 @@ Traceback (most recent call last):
     raise self._exception
   File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
     result = fn(*args, **kwargs)
-  File "src/update.py", line 238, in download_watch_file
+  File "src/update.py", line 253, in download_watch_file
     r = session.get(url)
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 548, in get
     return self.request('GET', url, **kwargs)
@@ -240,5 +227,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-03-01 21:15:35 [INFO] no updates found
-2024-03-01 21:15:35 [ERROR] failed: python3-defaults, ffmpeg, zsh
+2024-03-15 21:22:52 [INFO] GET https://sources.debian.org/data/main/z/zsh/5.9-6/debian/watch
+2024-03-15 21:22:53 [INFO] zsh 5.9: https://www.zsh.org/pub/zsh-5.9.tar.xz
+2024-03-15 21:22:53 [INFO] no updates found
+2024-03-15 21:22:53 [ERROR] failed: ffmpeg, python3-defaults, rustc
