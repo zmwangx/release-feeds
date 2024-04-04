@@ -5,16 +5,16 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2023-12-31T01:37:19Z</updated>
+  <updated>2024-04-04T23:42:46Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/ffmpeg.xml"/>
   <entry>
-    <id>urn:uuid:22f45f1a-a77d-11ee-a2c7-990ef2f38c64</id>
-    <title>ffmpeg 6.1.1</title>
+    <id>urn:uuid:0a0032bc-f2dd-11ee-af8c-f548f289db65</id>
+    <title>ffmpeg 7.0</title>
     <author>
       <name>ffmpeg authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-6.1.1.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2023-12-31T01:37:19Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-7.0.tar.bz2"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-7.0.tar.bz2&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-7.0.tar.bz2&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2024-04-04T23:42:46Z</updated>
   </entry>
 </feed>
