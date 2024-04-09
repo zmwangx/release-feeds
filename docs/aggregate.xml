@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2024-04-04T23:52:37Z</updated>
+  <updated>2024-04-09T15:42:34Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:c844ce06-f687-11ee-8884-05b3ec4d46e5</id>
+    <title>python3-defaults 3.12.3</title>
+    <author>
+      <name>python3-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.12.3/Python-3.12.3.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.12.3/Python-3.12.3.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.12.3/Python-3.12.3.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2024-04-09T15:42:33Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:6a11613e-f2de-11ee-96dc-1d2ba5337bb7</id>
     <title>ffmpeg 7.0</title>
@@ -36,16 +46,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.77.1-src.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.77.1-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.77.1-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2024-03-28T22:15:20Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:7cfaef36-c54d-11ee-aa05-c152a2950860</id>
-    <title>python3-defaults 3.12.2</title>
-    <author>
-      <name>python3-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.12.2/Python-3.12.2.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2024-02-07T00:11:49Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:c8fa000e-d3c6-11ec-bac2-a19069c1af25</id>
