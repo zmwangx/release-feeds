@@ -5,17 +5,17 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2024-04-09T22:15:34Z</updated>
+  <updated>2024-05-02T22:33:22Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
   <entry>
-    <id>urn:uuid:ae8913a0-f6be-11ee-bebc-85378ecdd918</id>
-    <title>rustc 1.77.2</title>
+    <id>urn:uuid:fb6aa0ea-08d3-11ef-a227-1dc1bb027b40</id>
+    <title>rustc 1.78.0</title>
     <author>
       <name>rustc authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.77.2-src.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.77.2-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.77.2-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2024-04-09T22:15:32Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.78.0-src.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.78.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.78.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2024-05-02T22:33:22Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:c844ce06-f687-11ee-8884-05b3ec4d46e5</id>
