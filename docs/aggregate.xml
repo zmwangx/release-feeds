@@ -5,17 +5,17 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2024-05-03T20:18:02Z</updated>
+  <updated>2024-05-03T20:25:01Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
   <entry>
-    <id>urn:uuid:3de56156-098a-11ef-b216-1d80335f7c1f</id>
-    <title>ffmpeg 3.0.12</title>
+    <id>urn:uuid:3787c5fa-098b-11ef-b769-c93ad39b283d</id>
+    <title>ffmpeg 7.0</title>
     <author>
       <name>ffmpeg authors</name>
     </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-3.0.12.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-3.0.12.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-3.0.12.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2024-05-03T20:18:02Z</updated>
+    <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-7.0.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-7.0.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-7.0.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2024-05-03T20:25:00Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:fb6aa0ea-08d3-11ef-a227-1dc1bb027b40</id>
