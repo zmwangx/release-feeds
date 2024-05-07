@@ -1,11 +1,14 @@
-2024-04-23 18:03:46 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2024-04-23 17:52:47.827855+00:00', 'golang-defaults': '2024-04-23 17:52:48.271076+00:00', 'python3-defaults': '2024-04-23 17:52:47.490831+00:00', 'rustc': '2024-04-23 17:52:47.481307+00:00', 'zsh': '2024-04-23 17:52:47.550054+00:00'})
-2024-04-23 18:03:46 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
-2024-04-23 18:03:46 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
-2024-04-23 18:03:46 [INFO] GET https://sources.debian.org/api/src/rustc/
-2024-04-23 18:03:46 [INFO] GET https://sources.debian.org/api/src/zsh/
-2024-04-23 18:03:46 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
-2024-04-23 18:03:48 [INFO] golang-defaults 1.22.2: https://golang.org/dl/go1.22.2.src.tar.gz
-2024-04-23 18:03:51 [ERROR] failed to update entry for python3-defaults
+2024-05-07 18:04:11 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2024-05-07 16:52:58.576669+00:00', 'golang-defaults': '2024-05-07 16:52:46.790014+00:00', 'python3-defaults': '2024-05-07 16:52:56.580762+00:00', 'rustc': '2024-05-07 16:52:57.065431+00:00', 'zsh': '2024-05-07 16:52:56.813532+00:00'})
+2024-05-07 18:04:11 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
+2024-05-07 18:04:11 [INFO] GET https://sources.debian.org/api/src/rustc/
+2024-05-07 18:04:11 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2024-05-07 18:04:11 [INFO] GET https://sources.debian.org/api/src/zsh/
+2024-05-07 18:04:11 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2024-05-07 18:04:13 [INFO] golang-defaults 1.22.3: https://golang.org/dl/go1.22.3.src.tar.gz
+2024-05-07 18:04:15 [INFO] GET https://sources.debian.org/api/src/ffmpeg/7:6.1.1-4/debian/watch
+2024-05-07 18:04:16 [INFO] GET https://sources.debian.org/api/src/rustc/1.70.0+dfsg2-1/debian/watch
+2024-05-07 18:04:16 [INFO] GET https://sources.debian.org/api/src/python3-defaults/3.11.8-1/debian/watch
+2024-05-07 18:04:17 [ERROR] failed to update entry for zsh
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -58,17 +61,19 @@ Traceback (most recent call last):
     acquire_watch_file(package, debian_dir)
   File "src/update.py", line 276, in acquire_watch_file
     download_watch_file(package, destdir)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 330, in wrapped_f
     return self(f, *args, **kw)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 467, in __call__
     do = self.iter(retry_state=retry_state)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 314, in iter
-    return fut.result()
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 390, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
     return self.__get_result()
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
     raise self._exception
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 470, in __call__
     result = fn(*args, **kwargs)
   File "src/update.py", line 238, in download_watch_file
     r = session.get(url)
@@ -81,7 +86,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-04-23 18:03:51 [ERROR] failed to update entry for rustc
+2024-05-07 18:04:20 [ERROR] failed to update entry for ffmpeg
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -96,10 +101,6 @@ Traceback (most recent call last):
     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
   File "/usr/lib/python3.8/socket.py", line 669, in readinto
     return self._sock.recv_into(b)
-  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
-    return self.recv_into(*args, **kwargs)
-  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
-    return self.recv_into(*args, **kwargs)
   File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 326, in recv_into
     raise timeout("The read operation timed out")
 socket.timeout: The read operation timed out
@@ -134,19 +135,21 @@ Traceback (most recent call last):
     acquire_watch_file(package, debian_dir)
   File "src/update.py", line 276, in acquire_watch_file
     download_watch_file(package, destdir)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 330, in wrapped_f
     return self(f, *args, **kw)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 467, in __call__
     do = self.iter(retry_state=retry_state)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 314, in iter
-    return fut.result()
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 390, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
     return self.__get_result()
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
     raise self._exception
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 470, in __call__
     result = fn(*args, **kwargs)
-  File "src/update.py", line 238, in download_watch_file
+  File "src/update.py", line 253, in download_watch_file
     r = session.get(url)
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 548, in get
     return self.request('GET', url, **kwargs)
@@ -157,7 +160,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-04-23 18:03:51 [ERROR] failed to update entry for zsh
+2024-05-07 18:04:21 [ERROR] failed to update entry for python3-defaults
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -172,10 +175,6 @@ Traceback (most recent call last):
     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
   File "/usr/lib/python3.8/socket.py", line 669, in readinto
     return self._sock.recv_into(b)
-  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
-    return self.recv_into(*args, **kwargs)
-  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
-    return self.recv_into(*args, **kwargs)
   File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 326, in recv_into
     raise timeout("The read operation timed out")
 socket.timeout: The read operation timed out
@@ -210,19 +209,21 @@ Traceback (most recent call last):
     acquire_watch_file(package, debian_dir)
   File "src/update.py", line 276, in acquire_watch_file
     download_watch_file(package, destdir)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 330, in wrapped_f
     return self(f, *args, **kw)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 467, in __call__
     do = self.iter(retry_state=retry_state)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 314, in iter
-    return fut.result()
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 390, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
     return self.__get_result()
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
     raise self._exception
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 470, in __call__
     result = fn(*args, **kwargs)
-  File "src/update.py", line 238, in download_watch_file
+  File "src/update.py", line 253, in download_watch_file
     r = session.get(url)
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 548, in get
     return self.request('GET', url, **kwargs)
@@ -233,7 +234,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-04-23 18:03:51 [ERROR] failed to update entry for ffmpeg
+2024-05-07 18:04:25 [ERROR] failed to update entry for rustc
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -248,10 +249,6 @@ Traceback (most recent call last):
     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
   File "/usr/lib/python3.8/socket.py", line 669, in readinto
     return self._sock.recv_into(b)
-  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
-    return self.recv_into(*args, **kwargs)
-  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
-    return self.recv_into(*args, **kwargs)
   File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 326, in recv_into
     raise timeout("The read operation timed out")
 socket.timeout: The read operation timed out
@@ -286,28 +283,36 @@ Traceback (most recent call last):
     acquire_watch_file(package, debian_dir)
   File "src/update.py", line 276, in acquire_watch_file
     download_watch_file(package, destdir)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 330, in wrapped_f
     return self(f, *args, **kw)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 467, in __call__
     do = self.iter(retry_state=retry_state)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 314, in iter
-    return fut.result()
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 390, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
     return self.__get_result()
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
     raise self._exception
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 470, in __call__
     result = fn(*args, **kwargs)
-  File "src/update.py", line 238, in download_watch_file
+  File "src/update.py", line 253, in download_watch_file
     r = session.get(url)
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 548, in get
     return self.request('GET', url, **kwargs)
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 535, in request
     resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 670, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 670, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 239, in resolve_redirects
+    resp = self.send(
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 648, in send
     r = adapter.send(request, **kwargs)
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-04-23 18:03:51 [INFO] no updates found
-2024-04-23 18:03:51 [ERROR] failed: python3-defaults, rustc, zsh, ffmpeg
+2024-05-07 18:04:25 [INFO] no updates found
+2024-05-07 18:04:25 [ERROR] failed: zsh, ffmpeg, python3-defaults, rustc
