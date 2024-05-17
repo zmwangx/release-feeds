@@ -1,13 +1,14 @@
-2024-05-03 20:52:46 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2024-05-03 19:42:52.611698+00:00', 'golang-defaults': '2024-05-03 19:42:43.685691+00:00', 'python3-defaults': '2024-05-03 19:42:51.329897+00:00', 'rustc': '2024-05-03 19:42:51.527199+00:00', 'zsh': '2024-05-03 19:42:51.649211+00:00'})
-2024-05-03 20:52:46 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
-2024-05-03 20:52:46 [INFO] GET https://sources.debian.org/api/src/zsh/
-2024-05-03 20:52:46 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
-2024-05-03 20:52:46 [INFO] GET https://sources.debian.org/api/src/rustc/
-2024-05-03 20:52:46 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
-2024-05-03 20:52:48 [INFO] golang-defaults 1.22.2: https://golang.org/dl/go1.22.2.src.tar.gz
-2024-05-03 20:52:50 [INFO] GET https://sources.debian.org/api/src/ffmpeg/7:6.1.1-4/debian/watch
-2024-05-03 20:52:51 [INFO] GET https://sources.debian.org/api/src/rustc/1.70.0+dfsg1-9/debian/watch
-2024-05-03 20:52:51 [ERROR] failed to update entry for zsh
+2024-05-17 20:52:46 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2024-05-17 20:24:43.632673+00:00', 'golang-defaults': '2024-05-17 20:24:41.585542+00:00', 'python3-defaults': '2024-05-17 20:24:42.257963+00:00', 'rustc': '2024-05-17 20:24:42.715194+00:00', 'zsh': '2024-05-17 20:24:42.945121+00:00'})
+2024-05-17 20:52:46 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
+2024-05-17 20:52:46 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2024-05-17 20:52:46 [INFO] GET https://sources.debian.org/api/src/zsh/
+2024-05-17 20:52:46 [INFO] GET https://sources.debian.org/api/src/rustc/
+2024-05-17 20:52:46 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2024-05-17 20:52:49 [INFO] golang-defaults 1.22.3: https://golang.org/dl/go1.22.3.src.tar.gz
+2024-05-17 20:52:51 [WARNING] retrying download_watch_file for rustc (attempt #1)
+2024-05-17 20:52:52 [WARNING] retrying download_watch_file for ffmpeg (attempt #1)
+2024-05-17 20:52:52 [WARNING] retrying download_watch_file for python3-defaults (attempt #1)
+2024-05-17 20:52:52 [ERROR] failed to update entry for zsh
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -58,17 +59,19 @@ Traceback (most recent call last):
     acquire_watch_file(package, debian_dir)
   File "src/update.py", line 276, in acquire_watch_file
     download_watch_file(package, destdir)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 330, in wrapped_f
     return self(f, *args, **kw)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 467, in __call__
     do = self.iter(retry_state=retry_state)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 314, in iter
-    return fut.result()
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 390, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
     return self.__get_result()
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
     raise self._exception
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 470, in __call__
     result = fn(*args, **kwargs)
   File "src/update.py", line 238, in download_watch_file
     r = session.get(url)
@@ -81,7 +84,11 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-05-03 20:52:51 [ERROR] failed to update entry for python3-defaults
+2024-05-17 20:52:53 [INFO] GET https://sources.debian.org/api/src/rustc/
+2024-05-17 20:52:54 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2024-05-17 20:52:54 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2024-05-17 20:52:57 [WARNING] retrying download_watch_file for ffmpeg (attempt #2)
+2024-05-17 20:52:59 [ERROR] failed to update entry for rustc
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -132,17 +139,19 @@ Traceback (most recent call last):
     acquire_watch_file(package, debian_dir)
   File "src/update.py", line 276, in acquire_watch_file
     download_watch_file(package, destdir)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 330, in wrapped_f
     return self(f, *args, **kw)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 467, in __call__
     do = self.iter(retry_state=retry_state)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 314, in iter
-    return fut.result()
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 390, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
     return self.__get_result()
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
     raise self._exception
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 470, in __call__
     result = fn(*args, **kwargs)
   File "src/update.py", line 238, in download_watch_file
     r = session.get(url)
@@ -155,8 +164,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-05-03 20:52:58 [INFO] GET https://sources.debian.org/data/main/f/ffmpeg/7%3A6.1.1-4/debian/watch
-2024-05-03 20:53:00 [ERROR] failed to update entry for rustc
+2024-05-17 20:52:59 [ERROR] failed to update entry for python3-defaults
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -205,35 +213,34 @@ Traceback (most recent call last):
     acquire_watch_file(package, debian_dir)
   File "src/update.py", line 276, in acquire_watch_file
     download_watch_file(package, destdir)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 289, in wrapped_f
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 330, in wrapped_f
     return self(f, *args, **kw)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 379, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 467, in __call__
     do = self.iter(retry_state=retry_state)
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 314, in iter
-    return fut.result()
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 368, in iter
+    result = action(retry_state)
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 390, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 437, in result
     return self.__get_result()
   File "/usr/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
     raise self._exception
-  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 382, in __call__
+  File "/home/runner/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 470, in __call__
     result = fn(*args, **kwargs)
-  File "src/update.py", line 253, in download_watch_file
+  File "src/update.py", line 238, in download_watch_file
     r = session.get(url)
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 548, in get
     return self.request('GET', url, **kwargs)
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 535, in request
     resp = self.send(prep, **send_kwargs)
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 670, in send
-    history = [resp for resp in gen] if allow_redirects else []
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 670, in <listcomp>
-    history = [resp for resp in gen] if allow_redirects else []
-  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 239, in resolve_redirects
-    resp = self.send(
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 648, in send
     r = adapter.send(request, **kwargs)
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-05-03 20:53:00 [INFO] ffmpeg 7.0: https://ffmpeg.org/releases/ffmpeg-7.0.tar.xz
-2024-05-03 20:53:00 [INFO] no updates found
-2024-05-03 20:53:00 [ERROR] failed: zsh, python3-defaults, rustc
+2024-05-17 20:53:01 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2024-05-17 20:53:05 [WARNING] retrying download_watch_file for ffmpeg (attempt #3)
+2024-05-17 20:53:05 [WARNING] failed to update entry for ffmpeg (0:28:22 since last successful crawl): no sid version found for ffmpeg: {"package":"ffmpeg","path":"ffmpeg","pathl":[["ffmpeg","/src/ffmpeg/"]],"suite":"","type":"package","versions":[{"area":"main","suites":["experimental"],"version":"7:7.0-1"},{"area":"main","suites":["trixie"],"version":"7:6.1.1-4"},{"area":"main","suites":["bookworm"],"version":"7:5.1.4-0+deb12u1"},{"area":"main","suites":["bullseye"],"version":"7:4.3.6-0+deb11u1"},{"area":"main","suites":["buster"],"version":"7:4.1.9-0+deb10u1"},{"area":"main","suites":["stretch"],"version":"7:3.2.14-1~deb9u1"},{"area":"main","suites":["jessie-backports"],"version":"7:3.2.10-1~deb9u1~bpo8+1"},{"area":"main","suites":["jessie-backports"],"version":"7:3.2.5-1~bpo8+1"},{"area":"main","suites":["squeeze-lts"],"version":"4:0.5.10-1+deb6u1"},{"area":"main","suites":["squeeze"],"version":"4:0.5.10-1"},{"area":"main","suites":["etch"],"version":"0.cvs20060823-8+etch1"},{"area":"main","suites":["etch-m68k"],"version":"0.cvs20060823-8"},{"area":"main","suites":["sarge"],"version":"0.cvs20050313-2sarge1"}]}
+
+2024-05-17 20:53:05 [INFO] no updates found
+2024-05-17 20:53:05 [ERROR] failed: zsh, rustc, python3-defaults
