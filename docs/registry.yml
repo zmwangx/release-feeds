@@ -1,11 +1,11 @@
 # AUTO-GENERATED -- DO NOT MODIFY
 ffmpeg: !FeedEntry
-  id: urn:uuid:3787c5fa-098b-11ef-b769-c93ad39b283d
+  id: urn:uuid:ce01f718-1b00-11ef-926e-db339740fd39
   package_name: ffmpeg
   package_version: !PackageVersion
-    archive_url: https://ffmpeg.org/releases/ffmpeg-7.0.tar.xz
-    version: '7.0'
-  updated: 2024-05-03 20:25:00.852497+00:00
+    archive_url: https://ffmpeg.org/releases/ffmpeg-7.0.1.tar.xz
+    version: 7.0.1
+  updated: 2024-05-26 01:39:34.196130+00:00
 golang-defaults: !FeedEntry
   id: urn:uuid:93ff3b00-0c8e-11ef-ae52-8124bc305b52
   package_name: golang-defaults
