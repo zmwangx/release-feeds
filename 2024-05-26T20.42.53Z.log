@@ -1,13 +1,13 @@
-2024-05-12 20:42:43 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2024-05-12 20:33:08.303481+00:00', 'golang-defaults': '2024-05-12 20:33:07.288138+00:00', 'python3-defaults': '2024-05-12 20:33:06.592614+00:00', 'rustc': '2024-05-12 20:33:06.726238+00:00', 'zsh': '2024-05-12 20:33:07.174126+00:00'})
-2024-05-12 20:42:43 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
-2024-05-12 20:42:43 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
-2024-05-12 20:42:43 [INFO] GET https://sources.debian.org/api/src/zsh/
-2024-05-12 20:42:43 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
-2024-05-12 20:42:43 [INFO] GET https://sources.debian.org/api/src/rustc/
-2024-05-12 20:42:45 [INFO] golang-defaults 1.22.3: https://golang.org/dl/go1.22.3.src.tar.gz
-2024-05-12 20:42:47 [INFO] GET https://sources.debian.org/api/src/zsh/5.9-6/debian/watch
-2024-05-12 20:42:47 [INFO] GET https://sources.debian.org/api/src/ffmpeg/7:6.1.1-4/debian/watch
-2024-05-12 20:42:48 [ERROR] failed to update entry for python3-defaults
+2024-05-26 20:42:53 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2024-05-26 19:22:55.082927+00:00', 'golang-defaults': '2024-05-26 19:22:49.273726+00:00', 'python3-defaults': '2024-05-26 19:22:53.338153+00:00', 'rustc': '2024-05-26 19:22:53.526414+00:00', 'zsh': '2024-05-26 19:22:53.805171+00:00'})
+2024-05-26 20:42:53 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
+2024-05-26 20:42:53 [INFO] GET https://sources.debian.org/api/src/zsh/
+2024-05-26 20:42:53 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2024-05-26 20:42:53 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2024-05-26 20:42:53 [INFO] GET https://sources.debian.org/api/src/rustc/
+2024-05-26 20:42:54 [INFO] golang-defaults 1.22.3: https://golang.org/dl/go1.22.3.src.tar.gz
+2024-05-26 20:42:58 [INFO] GET https://sources.debian.org/api/src/zsh/5.9-6/debian/watch
+2024-05-26 20:42:58 [INFO] GET https://sources.debian.org/api/src/ffmpeg/7:6.1.1-4/debian/watch
+2024-05-26 20:42:58 [ERROR] failed to update entry for rustc
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -83,7 +83,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-05-12 20:42:48 [ERROR] failed to update entry for rustc
+2024-05-26 20:42:58 [ERROR] failed to update entry for python3-defaults
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -161,7 +161,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-05-12 20:42:52 [ERROR] failed to update entry for zsh
+2024-05-26 20:43:03 [ERROR] failed to update entry for ffmpeg
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -235,7 +235,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-05-12 20:42:55 [INFO] GET https://sources.debian.org/data/main/f/ffmpeg/7%3A6.1.1-4/debian/watch
-2024-05-12 20:42:57 [INFO] ffmpeg 7.0: https://ffmpeg.org/releases/ffmpeg-7.0.tar.xz
-2024-05-12 20:42:57 [INFO] no updates found
-2024-05-12 20:42:57 [ERROR] failed: python3-defaults, rustc, zsh
+2024-05-26 20:43:05 [INFO] GET https://sources.debian.org/data/main/z/zsh/5.9-6/debian/watch
+2024-05-26 20:43:06 [INFO] zsh 5.9: https://www.zsh.org/pub/zsh-5.9.tar.xz
+2024-05-26 20:43:06 [INFO] no updates found
+2024-05-26 20:43:06 [ERROR] failed: rustc, python3-defaults, ffmpeg
