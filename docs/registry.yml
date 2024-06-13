@@ -21,12 +21,12 @@ python3-defaults: !FeedEntry
     version: 3.12.4
   updated: 2024-06-07 01:38:25.476005+00:00
 rustc: !FeedEntry
-  id: urn:uuid:fb6aa0ea-08d3-11ef-a227-1dc1bb027b40
+  id: urn:uuid:8b2d2c60-29c8-11ef-a818-23c46c808d27
   package_name: rustc
   package_version: !PackageVersion
-    archive_url: https://static.rust-lang.org/dist/rustc-1.78.0-src.tar.xz
-    version: 1.78.0
-  updated: 2024-05-02 22:33:22.096656+00:00
+    archive_url: https://static.rust-lang.org/dist/rustc-1.79.0-src.tar.xz
+    version: 1.79.0
+  updated: 2024-06-13 21:04:37.696713+00:00
 zsh: !FeedEntry
   id: urn:uuid:c8fa000e-d3c6-11ec-bac2-a19069c1af25
   package_name: zsh
