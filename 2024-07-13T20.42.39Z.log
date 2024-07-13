@@ -1,13 +1,13 @@
-2024-06-29 20:42:35 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2024-06-29 20:16:19.479849+00:00', 'golang-defaults': '2024-06-29 20:16:18.433844+00:00', 'python3-defaults': '2024-06-29 20:16:17.601615+00:00', 'rustc': '2024-06-29 20:16:25.072756+00:00', 'zsh': '2024-06-29 20:16:18.036514+00:00'})
-2024-06-29 20:42:35 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
-2024-06-29 20:42:35 [INFO] GET https://sources.debian.org/api/src/rustc/
-2024-06-29 20:42:35 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
-2024-06-29 20:42:35 [INFO] GET https://sources.debian.org/api/src/zsh/
-2024-06-29 20:42:35 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
-2024-06-29 20:42:37 [INFO] golang-defaults 1.22.4: https://golang.org/dl/go1.22.4.src.tar.gz
-2024-06-29 20:42:39 [INFO] GET https://sources.debian.org/api/src/rustc/1.79.0+dfsg1-2/debian/watch
-2024-06-29 20:42:39 [INFO] GET https://sources.debian.org/api/src/python3-defaults/3.12.2-1/debian/watch
-2024-06-29 20:42:41 [ERROR] failed to update entry for ffmpeg
+2024-07-13 20:42:39 [INFO] persisted: Persisted(last_successful_crawls={'ffmpeg': '2024-07-13 20:25:02.945778+00:00', 'golang-defaults': '2024-07-13 20:25:00.267821+00:00', 'python3-defaults': '2024-07-13 20:25:01.948859+00:00', 'rustc': '2024-07-13 20:25:09.476229+00:00', 'zsh': '2024-07-13 20:25:02.491998+00:00'})
+2024-07-13 20:42:39 [INFO] config: Config(feed=FeedConfig(base_url='https://release-feeds.zhimingwang.org/', author='release-feeds', aggregate_title='Aggregate software releases'), packages=['ffmpeg', 'golang-defaults', 'python3-defaults', 'rustc', 'zsh'])
+2024-07-13 20:42:39 [INFO] GET https://sources.debian.org/api/src/ffmpeg/
+2024-07-13 20:42:39 [INFO] GET https://sources.debian.org/api/src/zsh/
+2024-07-13 20:42:39 [INFO] GET https://sources.debian.org/api/src/python3-defaults/
+2024-07-13 20:42:39 [INFO] GET https://sources.debian.org/api/src/rustc/
+2024-07-13 20:42:41 [INFO] golang-defaults 1.22.5: https://golang.org/dl/go1.22.5.src.tar.gz
+2024-07-13 20:42:44 [INFO] GET https://sources.debian.org/api/src/rustc/1.79.0+dfsg1-2/debian/watch
+2024-07-13 20:42:44 [INFO] GET https://sources.debian.org/api/src/python3-defaults/3.12.3-1/debian/watch
+2024-07-13 20:42:45 [ERROR] failed to update entry for zsh
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -22,8 +22,6 @@ Traceback (most recent call last):
     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
   File "/usr/lib/python3.8/socket.py", line 669, in readinto
     return self._sock.recv_into(b)
-  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
-    return self.recv_into(*args, **kwargs)
   File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
     return self.recv_into(*args, **kwargs)
   File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 326, in recv_into
@@ -85,7 +83,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-06-29 20:42:41 [ERROR] failed to update entry for zsh
+2024-07-13 20:42:45 [ERROR] failed to update entry for ffmpeg
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -100,8 +98,6 @@ Traceback (most recent call last):
     line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
   File "/usr/lib/python3.8/socket.py", line 669, in readinto
     return self._sock.recv_into(b)
-  File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
-    return self.recv_into(*args, **kwargs)
   File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 328, in recv_into
     return self.recv_into(*args, **kwargs)
   File "/usr/lib/python3/dist-packages/urllib3/contrib/pyopenssl.py", line 326, in recv_into
@@ -163,7 +159,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-06-29 20:42:44 [ERROR] failed to update entry for python3-defaults
+2024-07-13 20:42:53 [ERROR] failed to update entry for rustc
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -232,12 +228,18 @@ Traceback (most recent call last):
     return self.request('GET', url, **kwargs)
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 535, in request
     resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 670, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 670, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 239, in resolve_redirects
+    resp = self.send(
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 648, in send
     r = adapter.send(request, **kwargs)
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-06-29 20:42:44 [ERROR] failed to update entry for rustc
+2024-07-13 20:42:53 [ERROR] failed to update entry for python3-defaults
 Traceback (most recent call last):
   File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 422, in _make_request
     six.raise_from(e, None)
@@ -306,10 +308,16 @@ Traceback (most recent call last):
     return self.request('GET', url, **kwargs)
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 535, in request
     resp = self.send(prep, **send_kwargs)
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 670, in send
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 670, in <listcomp>
+    history = [resp for resp in gen] if allow_redirects else []
+  File "/usr/lib/python3/dist-packages/requests/sessions.py", line 239, in resolve_redirects
+    resp = self.send(
   File "/usr/lib/python3/dist-packages/requests/sessions.py", line 648, in send
     r = adapter.send(request, **kwargs)
   File "/usr/lib/python3/dist-packages/requests/adapters.py", line 529, in send
     raise ReadTimeout(e, request=request)
 requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='sources.debian.org', port=443): Read timed out. (read timeout=5)
-2024-06-29 20:42:44 [INFO] no updates found
-2024-06-29 20:42:44 [ERROR] failed: ffmpeg, zsh, python3-defaults, rustc
+2024-07-13 20:42:53 [INFO] no updates found
+2024-07-13 20:42:53 [ERROR] failed: zsh, ffmpeg, rustc, python3-defaults
