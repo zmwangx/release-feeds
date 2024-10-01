@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2024-10-01T14:28:10Z</updated>
+  <updated>2024-10-01T17:35:39Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:92e107f2-801b-11ef-9fb1-f5fd4121006d</id>
+    <title>golang-defaults 1.23.2</title>
+    <author>
+      <name>golang-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.23.2.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.23.2.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.23.2.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2024-10-01T17:35:38Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:6154b3ba-8001-11ef-82ea-b9aa62ebd95b</id>
     <title>python3-defaults 3.12.7</title>
@@ -36,16 +46,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.81.0-src.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.81.0-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.81.0-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2024-09-05T22:15:54Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:651e9b92-6b9c-11ef-b022-a371e0545c2b</id>
-    <title>golang-defaults 1.23.1</title>
-    <author>
-      <name>golang-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.23.1.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.23.1.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.23.1.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2024-09-05T15:34:52Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:c8fa000e-d3c6-11ec-bac2-a19069c1af25</id>
