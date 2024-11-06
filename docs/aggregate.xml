@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2024-10-17T22:16:10Z</updated>
+  <updated>2024-11-06T23:04:00Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:685de3da-9c93-11ef-b06c-6d63f76b5dd1</id>
+    <title>golang-defaults 1.23.3</title>
+    <author>
+      <name>golang-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.23.3.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.23.3.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.23.3.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2024-11-06T23:03:59Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:6966d3c2-8cd5-11ef-935a-09e4d1dea6ad</id>
     <title>rustc 1.82.0</title>
@@ -26,16 +36,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.13.0/Python-3.13.0.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2024-10-07T17:27:26Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:92e107f2-801b-11ef-9fb1-f5fd4121006d</id>
-    <title>golang-defaults 1.23.2</title>
-    <author>
-      <name>golang-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.23.2.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.23.2.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.23.2.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2024-10-01T17:35:38Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:7c2d137c-7f06-11ef-a056-c5f3d0708713</id>
