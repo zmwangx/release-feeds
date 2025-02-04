@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2025-01-30T22:16:01Z</updated>
+  <updated>2025-02-04T16:52:53Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:79e82e14-e318-11ef-885e-310af5d99d8a</id>
+    <title>golang-defaults 1.23.6</title>
+    <author>
+      <name>golang-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.23.6.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.23.6.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.23.6.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2025-02-04T16:52:53Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:c990ec04-df57-11ef-873b-d9d3e0381150</id>
     <title>rustc 1.84.1</title>
@@ -16,16 +26,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://static.rust-lang.org/dist/rustc-1.84.1-src.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://static.rust-lang.org/dist/rustc-1.84.1-src.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://static.rust-lang.org/dist/rustc-1.84.1-src.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2025-01-30T22:16:00Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:4e87977e-d449-11ef-a7e1-9f3dbf02ca49</id>
-    <title>golang-defaults 1.23.5</title>
-    <author>
-      <name>golang-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.23.5.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.23.5.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.23.5.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2025-01-16T20:34:38Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:b484f962-b1d1-11ef-9a6d-dde40ee80fdc</id>
