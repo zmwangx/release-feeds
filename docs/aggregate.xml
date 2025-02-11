@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2025-02-05T12:52:25Z</updated>
+  <updated>2025-02-11T19:03:39Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:e748ecfe-e8aa-11ef-987e-c9ab6423522a</id>
+    <title>golang-defaults 1.24.0</title>
+    <author>
+      <name>golang-defaults authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.24.0.src.tar.gz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.24.0.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.24.0.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2025-02-11T19:03:39Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:0be2f7ac-e3c0-11ef-a7bc-e5f455f4b933</id>
     <title>python3-defaults 3.13.2</title>
@@ -16,16 +26,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2025-02-05T12:52:24Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:79e82e14-e318-11ef-885e-310af5d99d8a</id>
-    <title>golang-defaults 1.23.6</title>
-    <author>
-      <name>golang-defaults authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://golang.org/dl/go1.23.6.src.tar.gz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://golang.org/dl/go1.23.6.src.tar.gz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://golang.org/dl/go1.23.6.src.tar.gz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2025-02-04T16:52:53Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:c990ec04-df57-11ef-873b-d9d3e0381150</id>
