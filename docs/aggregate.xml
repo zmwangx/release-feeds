@@ -5,8 +5,18 @@
   <author>
     <name>release-feeds</name>
   </author>
-  <updated>2025-02-20T22:16:19Z</updated>
+  <updated>2025-03-03T00:37:12Z</updated>
   <link rel="self" href="https://release-feeds.zhimingwang.org/aggregate.xml"/>
+  <entry>
+    <id>urn:uuid:a61c4dda-f7c7-11ef-9989-c7c544cbeef3</id>
+    <title>ffmpeg 7.1.1</title>
+    <author>
+      <name>ffmpeg authors</name>
+    </author>
+    <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz"/>
+    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-7.1.1.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
+    <updated>2025-03-03T00:37:12Z</updated>
+  </entry>
   <entry>
     <id>urn:uuid:4e883008-efd8-11ef-82a0-a1932cfdf445</id>
     <title>rustc 1.85.0</title>
@@ -36,16 +46,6 @@
     <link rel="enclosure" type="application/octet-stream" href="https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz"/>
     <content type="html">&lt;p&gt;&lt;a href=&#34;https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
     <updated>2025-02-05T12:52:24Z</updated>
-  </entry>
-  <entry>
-    <id>urn:uuid:7c2d137c-7f06-11ef-a056-c5f3d0708713</id>
-    <title>ffmpeg 7.1</title>
-    <author>
-      <name>ffmpeg authors</name>
-    </author>
-    <link rel="enclosure" type="application/octet-stream" href="https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz"/>
-    <content type="html">&lt;p&gt;&lt;a href=&#34;https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;https://ffmpeg.org/releases/ffmpeg-7.1.tar.xz&lt;/a&gt;&lt;/p&gt;</content>
-    <updated>2024-09-30T08:32:10Z</updated>
   </entry>
   <entry>
     <id>urn:uuid:c8fa000e-d3c6-11ec-bac2-a19069c1af25</id>
